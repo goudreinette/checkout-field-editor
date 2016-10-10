@@ -1,0 +1,23 @@
+#categories #add {
+  background: none;
+  border: none;
+  background-image: url('./add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+  opacity: 0.2;
+}
+
+#categories #add:hover {
+  opacity: 0.4;
+  background-color: #eee;
+}
+
+input, .category {
+  width: 120px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

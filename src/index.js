@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Admin from './Admin';
 import './../public/index.css';
 
 ReactDOM.render(
-  <App />,
+  <Admin />,
   document.getElementById('root')
 );
