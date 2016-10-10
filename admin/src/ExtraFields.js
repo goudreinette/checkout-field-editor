@@ -1,13 +1,14 @@
 import React from 'react'
 import '../public/ExtraFields.css'
+import Field from './Field'
 
 export default function ExtraFields ({fields})
 {
-  console.log()
+  console.log(fields)
   return (
     <main id='extra-fields'>
       {
-        Object.keys(fields).map(field => <div className="field">{fields[field].label}</div>)
+        fields.map((field, i) => <Field {...field} key={i}/>)
       }
     </main>
   )

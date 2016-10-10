@@ -8,7 +8,7 @@ import ExtraFields from './ExtraFields'
 function Category (name)
 {
   this.name = ''
-  this.extraFields = {}
+  this.extraFields = []
 }
 
 export default class Admin extends Component
@@ -22,13 +22,14 @@ export default class Admin extends Component
       categories: [
         {
           name: 'tickets',
-          extraFields: {
-            'ticket_notes': {
+          extraFields: [
+            {
               label: 'Ticket Notes',
+              name: 'ticket_notes',
               placeholder: 'Leave your notes here...',
               required: false
             }
-          }
+          ]
         }
       ]
     }
@@ -36,8 +37,7 @@ export default class Admin extends Component
 
   addCategory ()
   {
-    const categories = this.state.categories
-      .filter(c => c.name != '')
+    const categories = this.filterEmptyCategories()
       .concat([new Category()])
 
     this.stopEditing()
@@ -62,14 +62,20 @@ export default class Admin extends Component
 
   stopEditing ()
   {
-    const categories = this.state.categories
-      .filter(c => c.name != '')
+    const categories = this.filterEmptyCategories()
 
     this.setState({
       editingCategory: false,
       categories: categories,
       currentTab: categories.length - 1
     })
+  }
+
+  filterEmptyCategories ()
+  {
+    const categories = this.state.categories.filter(c => c.name != '')
+    this.setState({categories})
+    return categories
   }
 
   render ()
