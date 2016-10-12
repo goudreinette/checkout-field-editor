@@ -1,9 +1,12 @@
 import React from 'react'
+import FieldToggle from './FieldToggle'
+import { title, snakeCase } from 'change-case'
 
-export default function Field(props) {
+export default function Field({name, type, required, showOnEmail, updateField, i})
+{
   return (
     <div className='field'>
-      <input placeholder="Field" />
+      <input placeholder="Field" onChange={e => updateField(i, 'name', snakeCase(e.target.value))} value={title(name)} />
 
       <div className="middle">
         <select className="type">
@@ -16,8 +19,7 @@ export default function Field(props) {
 
 
       <div className="right">
-        <button className="required">required</button>
-        <button className="email">show on email</button>
+        <FieldToggle updateField={updateField} name='required' enabled={required} i={i} />
       </div>
 
     </div>

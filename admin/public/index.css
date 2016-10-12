@@ -74,11 +74,12 @@ select {
 /*
  * Flex
  */
+
+
 .right {
   margin-left: auto;
 }
 
 .middle {
   margin: auto;
-  height: 100%;
 }

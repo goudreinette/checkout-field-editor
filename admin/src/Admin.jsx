@@ -12,6 +12,13 @@ function Category(name)
   this.extraFields = []
 }
 
+function Field()
+{
+  this.name = ''
+  this.required = false
+  this.showOnEmail = false
+}
+
 export default class Admin extends Component
 {
   constructor()
@@ -25,10 +32,9 @@ export default class Admin extends Component
           name: 'tickets',
           extraFields: [
             {
-              label: 'Ticket Notes',
               name: 'ticket_notes',
-              placeholder: 'Leave your notes here...',
-              required: false
+              required: false,
+              type: 'text'
             }
           ]
         }
@@ -36,26 +42,45 @@ export default class Admin extends Component
     }
   }
 
+  switchTab(index)
+  {
+    this.stopEditing()
+    this.setState({ currentTab: index })
+  }
+
   addCategory()
   {
-    const categories = this.filterEmptyCategories()
-      .concat([new Category()])
+    this.stopEditing()
 
+    this.setState(
+      update(this.state, {
+        categories: { $push: [new Category()] },
+        currentTab: { $set: this.state.categories.length },
+        editingCategory: { $set: true }
+      })
+    )
+  }
+
+  editCategory(index)
+  {
     this.stopEditing()
     this.setState({
-      categories,
-      editingCategory: true,
-      currentTab: categories.length - 1
+      currentTab: index,
+      editingCategory: true
     })
   }
 
   addField()
   {
-
+    this.setState(
+      update(this.state, { categories: { [this.state.currentTab]: { extraFields: { $push: [new Field()] } } } })
+    )
   }
 
   updateName(name)
   {
+    console.log(this.__proto__)
+
     const categories = this.state.categories
     const category = categories[this.state.currentTab]
     category.name = name
@@ -66,22 +91,25 @@ export default class Admin extends Component
     })
   }
 
+  updateField(index, key, value)
+  {
+    this.setState(update(this.state, {
+      categories: { [this.state.currentTab]: { extraFields: { [index]: { [key]: { $set: value } } } } }
+    }))
+  }
+
   stopEditing()
   {
-    const categories = this.filterEmptyCategories()
-
     this.setState({
       editingCategory: false,
-      categories: categories,
-      currentTab: categories.length - 1
+      categories: this.filterEmptyCategories(this.state.categories)
     })
   }
 
-  filterEmptyCategories()
+  filterEmptyCategories(categories)
   {
-    const categories = this.state.categories.filter(c => c.name != '')
-    this.setState({ categories })
-    return categories
+    console.log(arguments)
+    return categories.filter(c => c.name != '')
   }
 
   render()
@@ -92,15 +120,17 @@ export default class Admin extends Component
           editingCategory={this.state.editingCategory}
           categories={this.state.categories}
           addCategory={this.addCategory.bind(this)}
-          toggleEditing={i => this.setState({ editingCategory: !this.state.editingCategory, currentTab: i, categories: this.state.categories.filter(c => c.name != '') })}
+          toggleEditing={this.editCategory.bind(this)}
           currentTab={this.state.currentTab}
           updateName={this.updateName.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
-          switchTab={i => this.setState({ currentTab: i, editingCategory: false, categories: this.state.categories.filter(c => c.name != '') })}
+          switchTab={this.switchTab.bind(this)}
           />
         <ExtraFields
-          stopEditing={this.stopEditing.bind(this)}
           fields={this.state.categories[this.state.currentTab].extraFields}
+          addField={this.addField.bind(this)}
+          stopEditing={this.stopEditing.bind(this)}
+          updateField={this.updateField.bind(this)}
           />
       </div>
     )

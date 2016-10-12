@@ -14,6 +14,11 @@
   margin-bottom: 20px;
 }
 
+.field > *, .field > .right > *, .field .middle > * {
+    height: 100%;
+    outline: none;
+}
+
 .field.sortable-ghost {
   border: 1px dashed deepskyblue;
   opacity: 0.5;
@@ -29,6 +34,11 @@
   border: none;
   text-align: left;
   text-indent: 20px;
+  width: 200px;
+}
+
+.field button {
+  height: 100%;
 }
 
 .field#add {
@@ -49,4 +59,9 @@
 
 .middle select {
   color: grey;
+}
+
+
+.required.enabled {
+  color: #bb2929 !important
 }
