@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import update from 'immutability-helper'
+import 'array.prototype.move'
 import logo from '../public/logo.svg'
 import '../public/Admin.css'
 import CategoriesHeader from './CategoriesHeader'
 import ExtraFields from './ExtraFields'
 
+update.extend('$move', ([a, b], arr) =>
+{
+  return [...arr.move(a, b)]
+})
 
 function Category(name)
 {
@@ -15,8 +20,9 @@ function Category(name)
 function Field()
 {
   this.name = ''
+  this.type = 'text'
   this.required = false
-  this.showOnEmail = false
+  this.showOnEmails = false
 }
 
 export default class Admin extends Component
@@ -34,7 +40,8 @@ export default class Admin extends Component
             {
               name: 'ticket_notes',
               required: false,
-              type: 'text'
+              type: 'text',
+              showOnEmails: false
             }
           ]
         }
@@ -77,6 +84,27 @@ export default class Admin extends Component
     )
   }
 
+  moveField(indexA, indexB)
+  {
+    this.setState(
+      update(this.state, { categories: { [this.state.currentTab]: { extraFields: { $move: [indexA, indexB] } } } })
+    )
+  }
+
+  removeField(index)
+  {
+    this.setState(
+      update(this.state, { categories: { [this.state.currentTab]: { extraFields: { $splice: [[index, 1]] } } } })
+    )
+  }
+
+  updateField(index, key, value)
+  {
+    this.setState(update(this.state, {
+      categories: { [this.state.currentTab]: { extraFields: { [index]: { [key]: { $set: value } } } } }
+    }))
+  }
+
   updateName(name)
   {
     console.log(this.__proto__)
@@ -91,12 +119,6 @@ export default class Admin extends Component
     })
   }
 
-  updateField(index, key, value)
-  {
-    this.setState(update(this.state, {
-      categories: { [this.state.currentTab]: { extraFields: { [index]: { [key]: { $set: value } } } } }
-    }))
-  }
 
   stopEditing()
   {
@@ -131,6 +153,8 @@ export default class Admin extends Component
           addField={this.addField.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
           updateField={this.updateField.bind(this)}
+          moveField={this.moveField.bind(this)}
+          removeField={this.removeField.bind(this)}
           />
       </div>
     )

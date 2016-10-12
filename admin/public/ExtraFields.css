@@ -10,7 +10,6 @@
   background-color: white;
   display: flex;
   align-items: center;
-  padding-right: 20px;
   margin-bottom: 20px;
 }
 
@@ -62,6 +61,33 @@
 }
 
 
+.showOnEmails.enabled {
+  color: #bb2929 !important
+}
+
+
 .required.enabled {
   color: #bb2929 !important
+}
+
+
+.field .remove {
+  background-image: url('./remove.svg');
+  width: 50px;
+  height: 50px;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: saturate(0);
+  opacity: 0.5;
+} 
+
+.field:hover .remove {
+  opacity: 0.5;
+} 
+
+
+.field .remove:hover {
+  opacity: 1;
+  filter: saturate(1);
 }

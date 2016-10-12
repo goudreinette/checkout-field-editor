@@ -3,15 +3,14 @@ import Sortable from 'react-sortablejs'
 import '../public/ExtraFields.css'
 import Field from './Field.jsx'
 
-export default function ExtraFields({fields, addField, updateField})
+export default function ExtraFields({fields, addField, updateField, moveField, removeField})
 {
-  console.log(fields)
   return (
     <main id='extra-fields'>
-      <Sortable>
+      <Sortable onChange={(_, __, {oldIndex, newIndex}) => moveField(oldIndex, newIndex)}>
         {
-          fields.map((field, i) => <Field {...field} updateField={updateField} key={i} i={i}/>)
-        }
+          fields.map((field, i) => <Field {...field} updateField={updateField} removeField={removeField} key={i} i={i} />)
+        } 
       </Sortable>
 
       <div className="field" id="add" onClick={addField} />
