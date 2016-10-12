@@ -61,3 +61,24 @@ header .active {
 /**
  * Input
  */
+
+button, select {
+  background: none;
+  border: none;
+}
+
+select {
+  height: 100%;
+}
+
+/*
+ * Flex
+ */
+.right {
+  margin-left: auto;
+}
+
+.middle {
+  margin: auto;
+  height: 100%;
+}

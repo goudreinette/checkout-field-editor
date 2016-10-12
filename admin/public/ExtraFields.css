@@ -10,8 +10,17 @@
   background-color: white;
   display: flex;
   align-items: center;
-  /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);*/
-  /*border-radius: 3px;*/
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.field.sortable-ghost {
+  border: 1px dashed deepskyblue;
+  opacity: 0.5;
+}
+
+.field.sortable-ghost * {
+  opacity: 0;
 }
 
 
@@ -22,12 +31,22 @@
   text-indent: 20px;
 }
 
-.field button.required {
-  background: none;
-  color: lightgrey;
-  border: none;
-  font-size: 24px;
-  height: 100%;
-  vertical-align: middle;
-  line-height: 55px;
+.field#add {
+  background-color: #ddd;
+  opacity: 0.5;
+  border: 1px dashed lightgrey;
+}
+
+.field#add:hover {
+  opacity: 1;
+}
+
+
+
+.right button {
+  color: #bbb;
+}
+
+.middle select {
+  color: grey;
 }
