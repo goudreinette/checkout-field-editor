@@ -77,6 +77,11 @@ export default class Admin extends Component
     })
   }
 
+  removeCategory(index)
+  {
+
+  }
+
   addField()
   {
     this.setState(

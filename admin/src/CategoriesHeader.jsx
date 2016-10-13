@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import '../public/CategoriesHeader.css'
+import Category from './Category'
 import EditingCategory from './EditingCategory'
 
 export default function CategoriesHeader(props)
@@ -16,13 +17,19 @@ export default function CategoriesHeader(props)
               updateName={props.updateName}
               stopEditing={props.stopEditing}
               />
-            : <div className={`category ${props.currentTab == i ? 'active' : ''}`} key={i} onClick={_ => props.currentTab == i ? props.toggleEditing(i) : props.switchTab(i)}>
-              {category.name}
-            </div>
+            : <Category
+              i={i}
+              key={i}
+              active={props.currentTab == i}
+              name={category.name}
+              toggleEditing={props.toggleEditing}
+              switchTab={props.switchTab}
+              />
         )
       }
 
-      <div id="add" onClick={props.addCategory} />
+      <button id="add" onClick={props.addCategory} />
+      <button id="save" />
     </header>
   )
 }

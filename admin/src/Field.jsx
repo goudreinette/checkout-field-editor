@@ -7,10 +7,14 @@ export default function Field({name, type, required, showOnEmails, updateField, 
   console.log(showOnEmails)
   return (
     <div className='field'>
-      <input placeholder="Field" onChange={e => updateField(i, 'name', snakeCase(e.target.value))} value={title(name)} />
+      <input
+        placeholder="Field"
+        value={title(name)}
+        onChange={e => updateField(i, 'name', snakeCase(e.target.value))}
+        />
 
       <div className="middle">
-        <select className="type">
+        <select className="type" value={type} onChange={e => updateField(i, 'type', e.target.value)}>
           <option value="input">Input</option>
           <option value="Textarea">Textarea</option>
           <option value="Checkbox">Checkbox</option>
@@ -24,7 +28,7 @@ export default function Field({name, type, required, showOnEmails, updateField, 
         <FieldToggle updateField={updateField} name='required' enabled={required} i={i} />
       </div>
 
-      <button className="remove" onClick={_ => removeField(i)}/>
+      <button className="remove" onClick={_ => removeField(i)} />
 
     </div>
   )
