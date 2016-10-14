@@ -31,6 +31,7 @@ function showAdmin()
 
 function saveCheckoutFields()
 {
-    
+    $checkoutFields = $_POST['checkoutFields'];
+    wp_send_json($checkoutFields);
 }
 
