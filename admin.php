@@ -1,7 +1,7 @@
 <?php namespace ConditionalCheckoutFields;
 
 add_action('admin_menu', 'ConditionalCheckoutFields\addSubmenu');
-
+add_action('wp_ajax_saveCheckoutFields', 'ConditionalCheckoutFields\saveCheckoutFields');
 
 function addSubmenu()
 {
@@ -19,11 +19,18 @@ function addSubmenu()
 function showAdmin()
 {
     echo "<div id='root'></div>";
-    wp_enqueue_script('ccf', plugin_dir_url(__FILE__) . 'views/admin/main.js');
-    wp_enqueue_style('ccf', plugin_dir_url(__FILE__) . 'views/admin/main.css');
+    wp_enqueue_script('ccf', plugin_dir_url(__FILE__) . 'admin/build/static/js/main.60aacb87.js');
+    wp_enqueue_style('ccf', plugin_dir_url(__FILE__) . 'admin/build/static/css/main.3d745e37.css');
+    wp_localize_script('ccf', 'data', [
+        'ajax_url' => admin_url('admin-ajax.php')
+    ]);
 }
 
-function hello ($world)
+
+
+
+function saveCheckoutFields()
 {
     
 }
+

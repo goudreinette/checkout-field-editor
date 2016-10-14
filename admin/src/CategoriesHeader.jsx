@@ -1,7 +1,12 @@
 import React, { Component, PropTypes } from 'react'
+import InlineSVG from 'svg-inline-react'
 import '../public/CategoriesHeader.css'
 import Category from './Category'
 import EditingCategory from './EditingCategory'
+import addIcon from 'svg-inline!../public/add.svg'
+import saveIcon from '../public/save.svg'
+
+
 
 export default function CategoriesHeader(props)
 {
@@ -28,8 +33,12 @@ export default function CategoriesHeader(props)
         )
       }
 
-      <button id="add" onClick={props.addCategory} />
-      <button id="save" />
+      <button id="add" onClick={props.addCategory}>
+        <InlineSVG src={require('../public/add.svg')} />
+      </button>
+      <button id="save">
+        <InlineSVG src={require('../public/save.svg')} />
+      </button>
     </header>
   )
 }

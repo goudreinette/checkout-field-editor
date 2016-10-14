@@ -1,6 +1,8 @@
 import React from 'react'
-import FieldToggle from './FieldToggle'
+import InlineSVG from 'svg-inline-react'
 import { title, snakeCase } from 'change-case'
+import FieldToggle from './FieldToggle'
+import removeIcon from '../public/remove.svg'
 
 export default function Field({name, type, required, showOnEmails, updateField, removeField, i})
 {
@@ -28,7 +30,9 @@ export default function Field({name, type, required, showOnEmails, updateField, 
         <FieldToggle updateField={updateField} name='required' enabled={required} i={i} />
       </div>
 
-      <button className="remove" onClick={_ => removeField(i)} />
+      <button className="remove" onClick={_ => removeField(i)} >
+        <InlineSVG src={require('../public/remove.svg')} />
+      </button>
 
     </div>
   )

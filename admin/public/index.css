@@ -3,22 +3,27 @@
 }
 
 html {
-  padding: 25px;
   background-color: white;
   height: 100%;
 }
 
-body {
+/*body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #eee;
   height: 100%;
-}
+}*/
 
 #root, #admin {
   height: 100%;
   width: 100%;
+}
+
+#root {
+  margin: 25px;
+  background-color: #eee;
+  height: calc(100vh - 50px);
+  width: calc(100% - 50px);
 }
 
 main {

@@ -1,9 +1,11 @@
 #categories #add {
-  background-image: url('./add.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
   opacity: 0.2;
+  padding: 0px 15px;
+}
+
+#categories #add i {
+  width: 25px;
+  height: 25px;
 }
 
 #categories #add:hover {
@@ -13,11 +15,14 @@
 
 #categories #save {
   margin-left: auto;
-  background-image: url('./save.svg');
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 35%;
   opacity: 0.2;
+  padding: 0px 15px;
+}
+
+#categories #save i {
+  width: 25px;
+  height: 25px;
 }
 
 #categories #add:hover, #categories #save:hover {
