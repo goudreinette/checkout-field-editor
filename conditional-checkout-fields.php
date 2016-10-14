@@ -11,4 +11,4 @@ License: A "Slug" license name e.g. GPL2
 */
 
 require plugin_dir_path(__FILE__) . "./admin.php";
-
+require plugin_dir_path(__FILE__) . "./option.php";

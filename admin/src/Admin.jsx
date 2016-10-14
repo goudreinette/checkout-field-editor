@@ -45,7 +45,7 @@ export default class Admin extends Component
             }
           ]
         }
-      ]
+      ].concat(window.data ? window.data.categories : [])
     }
   }
 

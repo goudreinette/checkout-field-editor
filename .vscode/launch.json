@@ -6,6 +6,9 @@
             "type": "php",
             "request": "launch",
             "port": 9000
+            // "localSourceRoot": "${workspaceRoot}",
+            // "serverSourceRoot": "/wordpress/wp-content/plugins/conditional-checkout-fields",
+            // "stopOnEntry": true
         },
         {
             "name": "Launch currently open script",
