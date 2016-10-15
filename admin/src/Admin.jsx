@@ -49,6 +49,14 @@ export default class Admin extends Component
     }
   }
 
+  save()
+  {
+    jQuery.post(data.ajaxurl, {
+      action: 'saveCheckoutFields',
+      categories: this.state.categories
+    })
+  }
+
   switchTab(index)
   {
     this.stopEditing()
@@ -152,6 +160,7 @@ export default class Admin extends Component
           updateName={this.updateName.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
           switchTab={this.switchTab.bind(this)}
+          save={this.save.bind(this)}
           />
         <ExtraFields
           fields={this.state.categories[this.state.currentTab].extraFields}

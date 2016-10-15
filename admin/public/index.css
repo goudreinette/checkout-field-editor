@@ -19,11 +19,14 @@ html {
   width: 100%;
 }
 
+#wp-content {
+  background-color: #f1f1f1;
+}
+
 #root {
   margin: 25px;
   background-color: #eee;
-  height: calc(100vh - 50px);
-  width: calc(100% - 50px);
+  width: calc(100% - 75px);
 }
 
 main {

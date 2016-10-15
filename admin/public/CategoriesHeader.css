@@ -10,7 +10,7 @@
 
 #categories #add:hover {
   opacity: 0.4;
-  background-color: #eee;
+  background-color: #f1f1f1;
 }
 
 #categories #save {
@@ -27,7 +27,7 @@
 
 #categories #add:hover, #categories #save:hover {
   opacity: 0.4;
-  background-color: #eee;
+  background-color: #f1f1f1;
 }
 
 input, .category {

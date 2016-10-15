@@ -22,6 +22,7 @@ function addSubmenu()
 
 function showAdmin()
 {
+    echo "<h1>Checkout Fields by Category</h1>";
     echo "<div id='root'></div>";
     wp_enqueue_script('ccf', plugin_dir_url(__FILE__) . 'admin/build/static/js/main.js');
     wp_enqueue_style('ccf', plugin_dir_url(__FILE__) . 'admin/build/static/css/main.css');

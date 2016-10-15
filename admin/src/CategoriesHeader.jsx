@@ -36,7 +36,7 @@ export default function CategoriesHeader(props)
       <button id="add" onClick={props.addCategory}>
         <InlineSVG src={require('../public/add.svg')} />
       </button>
-      <button id="save">
+      <button id="save" onClick={props.save}>
         <InlineSVG src={require('../public/save.svg')} />
       </button>
     </header>
