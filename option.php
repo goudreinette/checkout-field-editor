@@ -6,8 +6,8 @@ function getFields ()
     return json_decode($result);
 }
 
-function storeFields ($fiels)
+function storeFields ($fields)
 {
-    $result = update_option('ccf', json_encode($fiels));
+    $result = update_option('ccf', json_encode($fields));
     return $result;
 }
