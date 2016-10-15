@@ -2,9 +2,7 @@
 
 add_action('admin_menu', 'ConditionalCheckoutFields\addSubmenu');
 add_action('wp_ajax_saveCheckoutFields', 'ConditionalCheckoutFields\saveCheckoutFields');
-add_action('wp_ajax_nopriv_my_action', function () {
-    return ;
-});
+add_action('wp_ajax_nopriv_saveCheckoutFields', 'ConditionalCheckoutFields\saveCheckoutFields');
 
 
 function addSubmenu()
@@ -37,8 +35,8 @@ function showAdmin()
 
 function saveCheckoutFields()
 {
-
-    $checkoutFields = $_POST['fields'];
-    wp_send_json($checkoutFields);
+    $checkoutFields = $_POST['categories'];
+    storeFields($checkoutFields);
+    wp_send_json(getFields());
 }
 

@@ -25,36 +25,43 @@ function Field()
   this.showOnEmails = false
 }
 
+const initialCategories = [
+  {
+    name: 'tickets',
+    extraFields: [
+      {
+        name: 'ticket_notes',
+        required: false,
+        type: 'text',
+        showOnEmails: false
+      }
+    ]
+  }
+]
+
+
 export default class Admin extends Component
 {
   constructor()
   {
+    console.log(window.data.categories || initialCategories)
     super()
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: [
-        {
-          name: 'tickets',
-          extraFields: [
-            {
-              name: 'ticket_notes',
-              required: false,
-              type: 'text',
-              showOnEmails: false
-            }
-          ]
-        }
-      ].concat(window.data ? window.data.categories : [])
+      categories: window.data.categories || initialCategories
     }
   }
 
   save()
   {
-    jQuery.post(data.ajaxurl, {
+    jQuery.post(ajaxurl, {
       action: 'saveCheckoutFields',
-      categories: this.state.categories
-    })
+      categories: this.state.categories,
+    }, (res) =>
+      {
+        console.log(res)
+      })
   }
 
   switchTab(index)
