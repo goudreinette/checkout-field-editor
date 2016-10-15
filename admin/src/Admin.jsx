@@ -44,12 +44,11 @@ export default class Admin extends Component
 {
   constructor()
   {
-    console.log(window.data.categories || initialCategories)
     super()
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: window.data.categories || initialCategories
+      categories: window.categories.length ? window.categories : initialCategories
     }
   }
 
