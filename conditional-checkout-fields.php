@@ -14,3 +14,4 @@ require plugin_dir_path(__FILE__) . "./admin.php";
 require plugin_dir_path(__FILE__) . "./option.php";
 require plugin_dir_path(__FILE__) . "./checkout.php";
 require plugin_dir_path(__FILE__) . "./emails.php";
+require plugin_dir_path(__FILE__) . "./utils.php";
