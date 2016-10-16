@@ -19,18 +19,20 @@ function renderExtraFields ($checkout)
         $applicableCategoryNames = array_merge($applicableCategoryNames, $categoryNames);
     }
 
+    // Render every applicable category
     foreach ($applicableCategoryNames as $categoryName) {
-        if (isset($extraFieldsByCategory[$categoryName]))
-            renderCategory($extraFieldsByCategory[$categoryName]);
+        // When there are extra fields defined for the category...
+        if (in_array($categoryName, array_column($extraFieldsByCategory, 'name')))
+            renderCategory(findBy('name', $categoryName, $extraFieldsByCategory));
     }
 }
 
-function renderCategory ()
+function renderCategory ($category)
 {
-
+    echo "<h3>$category[name]</h3>";
 }
 
-function renderField ()
+function renderField ($field)
 {
     
 }
