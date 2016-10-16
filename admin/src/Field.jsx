@@ -17,10 +17,10 @@ export default function Field({name, type, required, showOnEmails, updateField, 
 
       <div className="middle">
         <select className="type" value={type} onChange={e => updateField(i, 'type', e.target.value)}>
-          <option value="input">Input</option>
-          <option value="Textarea">Textarea</option>
-          <option value="Checkbox">Checkbox</option>
-          <option value="Select">Select</option>
+          <option value="text">Input</option>
+          <option value="textarea">Textarea</option>
+          <option value="checkbox">Checkbox</option>
+          <option value="select">Select</option>
         </select>
       </div>
 
