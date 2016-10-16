@@ -28,11 +28,21 @@ function renderExtraFields ($checkout)
 }
 
 function renderCategory ($category)
-{
+{   
+    echo "<div>";
     echo "<h3>$category[name]</h3>";
+    foreach ($category['extraFields'] as $field) {
+        renderField($field);
+    }
+    echo "</div>";
 }
 
 function renderField ($field)
 {
-    
+    woocommerce_form_field($field['name'], [
+        'type'          => $field['type'],
+        'label'         => $field['name'],  // prettify
+        'placeholder'   => $field['name'],  // prettify
+        'class'         => ['my-field-class form-row-wide']
+    ]);
 }
