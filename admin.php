@@ -46,7 +46,7 @@ function saveCheckoutFields()
                 $field['showOnEmails'] = false;
         }
     }
-    // --------------------------------------------------
+    // ---------------------------------------------------
     
     storeFields($categories);
     wp_send_json(getFields());

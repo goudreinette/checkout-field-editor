@@ -17,7 +17,7 @@ function titleCase ($snake_cased_string)
 
 function getCategoriesByNames ($extraFieldsByCategory, $categoryNames)
 {
-    $categories = array_map(function ($categoryName) {
+    $categories = array_map(function ($categoryName) use ($extraFieldsByCategory) {
         return findBy('name', $categoryName, $extraFieldsByCategory);
     }, $categoryNames);
 

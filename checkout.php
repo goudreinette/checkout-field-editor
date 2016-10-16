@@ -19,18 +19,21 @@ function validate ()
 {
     $extraFieldsByCategory   = getFields();
     $applicableCategoryNames = getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
-    $applicableCategories    = getCategoresByNames($extraFieldsByCategory, $applicableCategoryNames);
+    $applicableCategories    = getCategoriesByNames($extraFieldsByCategory, $applicableCategoryNames);
     $applicableFields        = array_flatten(array_column($applicableCategories, 'extraFields'));
-    
-    if ( ! $_POST['my_field_name'] )
-        wc_add_notice( __( 'Please enter something into this new shiny field.' ), 'error' );
+    $requiredFields          = array_filter($applicableFields, function ($field) { return !!$field['required']; });
+
+    foreach ($requiredFields as $field) {
+        if (!isset($_POST[$field['name']]) || $_POST[$field['name']] == '')
+            wc_add_notice(titleCase($field['name']) . " is a required field.", 'error');
+    }
 }
 
 
 function renderExtraFields ($checkout)
 {
     // Determine which extra fields need to be displayed for the given cart...
-    $extraFieldsByCategory = getFields();
+    $extraFieldsByCategory   = getFields();
     $applicableCategoryNames = getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
    
     // Render every applicable category
