@@ -7,3 +7,10 @@ function findBy ($key, $val, $array)
             return $item;
     }
 }
+
+function titleCase ($snake_cased_string)
+{
+    $withoutUnderscores = str_replace('_', ' ', $snake_cased_string);
+    $titleCased         = ucwords($withoutUnderscores);
+    return $titleCased;
+}

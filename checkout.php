@@ -40,9 +40,10 @@ function renderCategory ($category)
 function renderField ($field)
 {
     woocommerce_form_field($field['name'], [
-        'type'          => $field['type'],
-        'label'         => $field['name'],  // prettify
-        'placeholder'   => $field['name'],  // prettify
-        'class'         => ['my-field-class form-row-wide']
+        'type'          => strtolower($field['type']),
+        'label'         => titleCase($field['name']),  // prettify
+        'placeholder'   => titleCase($field['name']),  // prettify
+        'class'         => ['my-field-class form-row-wide'],
+        'required'      => $field['required']
     ]);
 }
