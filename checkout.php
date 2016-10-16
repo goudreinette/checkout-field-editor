@@ -4,8 +4,11 @@
 // get categories,
 // show extra fields that belong to product's category
 
-add_filter('woocommerce_checkout_fields', function ($fields) {
-   
+add_filter('woocommerce_after_order_notes', 'ConditionalCheckoutFields\renderExtraFields');
+
+
+function renderExtraFields ($checkout)
+{
     $extraFieldsByCategory = getFields();
     $applicableCategoryNames = [];
    
@@ -17,9 +20,17 @@ add_filter('woocommerce_checkout_fields', function ($fields) {
     }
 
     foreach ($applicableCategoryNames as $categoryName) {
-        if (in_array($categoryName, array_column($extraFieldsByCategory, 'name')))
-            $fields[$categoryName] = findBy('name', $categoryName, $extraFieldsByCategory)['extraFields'];
+        if (isset($extraFieldsByCategory[$categoryName]))
+            renderCategory($extraFieldsByCategory[$categoryName]);
     }
+}
 
-    return $fields;
-});
+function renderCategory ()
+{
+
+}
+
+function renderField ()
+{
+    
+}
