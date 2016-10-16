@@ -8,19 +8,26 @@ add_filter('woocommerce_after_order_notes', 'ConditionalCheckoutFields\renderExt
 add_action('woocommerce_checkout_process', 'ConditionalCheckoutFields\validate');
 add_action('woocommerce_checkout_update_order_meta', 'ConditionalCheckoutFields\handleSave');
 
-
-function handleSave ()
+/**
+ * Save and Validate
+ */
+function handleSave ($order_id)
 {
-    return;
+    $applicableFields = getApplicableFields();
+
+    foreach ($applicableFields as $field)
+        if (!empty($_POST[$field['name']]))
+            update_post_meta(
+                $order_id,
+                $field['name'],
+                sanitize_text_field( $_POST[$field['name']] 
+            ));
 }
 
 
 function validate ()
 {
-    $extraFieldsByCategory   = getFields();
-    $applicableCategoryNames = getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
-    $applicableCategories    = getCategoriesByNames($extraFieldsByCategory, $applicableCategoryNames);
-    $applicableFields        = array_flatten(array_column($applicableCategories, 'extraFields'));
+    $applicableFields        = getApplicableFields();
     $requiredFields          = array_filter($applicableFields, function ($field) { return !!$field['required']; });
 
     foreach ($requiredFields as $field) {
@@ -30,6 +37,10 @@ function validate ()
 }
 
 
+
+/**
+ * Render
+ */
 function renderExtraFields ($checkout)
 {
     // Determine which extra fields need to be displayed for the given cart...
@@ -66,6 +77,10 @@ function renderField ($field)
     ]);
 }
 
+
+/**
+ * Utilities
+ */
 function getApplicableCategoryNamesForCart ($cart_contents)
 {
     $applicableCategoryNames = [];
@@ -77,4 +92,14 @@ function getApplicableCategoryNamesForCart ($cart_contents)
     }
 
     return $applicableCategoryNames;
+}
+
+function getApplicableFields ()
+{
+    $extraFieldsByCategory   = getFields();
+    $applicableCategoryNames = getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
+    $applicableCategories    = getCategoriesByNames($extraFieldsByCategory, $applicableCategoryNames);
+    $applicableFields        = array_flatten(array_column($applicableCategories, 'extraFields'));
+
+    return $applicableFields;
 }
