@@ -1,0 +1,10 @@
+{
+    "name": "reinvdwoerd/checkout-field-editor",
+    "authors": [
+        {
+            "name": "reinvdwoerd",
+            "email": "reinvanderwoerd@me.com"
+        }
+    ],
+    "require": {}
+}
