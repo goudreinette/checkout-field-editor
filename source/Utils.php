@@ -62,10 +62,10 @@ class Utils
         return $applicableCategoryNames;
     }
 
-    static function processSave()
+    static function processSave($categories)
     {
         foreach ($categories as &$category) {
-            if ($category['extraFields'] == null || !isset($category['extraFields']))
+            if (!isset($category['extraFields']))
                 $category['extraFields'] = [];
             foreach ($category['extraFields'] as &$field) {
                 if ($field['required'] == 'false')
@@ -74,5 +74,7 @@ class Utils
                     $field['showOnEmails'] = false;
             }
         }
+
+        return $categories;
     }
 }
