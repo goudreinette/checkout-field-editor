@@ -5,39 +5,14 @@ import logo from '../public/logo.svg'
 import '../public/Admin.css'
 import CategoriesHeader from './CategoriesHeader'
 import ExtraFields from './ExtraFields'
-div
+import {Field, Category, initialCategories} from './Model'
+
+
 update.extend('$move', ([a, b], arr) =>
 {
   return [...arr.move(a, b)]
 })
 
-function Category(name)
-{
-  this.name = ''
-  this.extraFields = []
-}
-
-function Field()
-{
-  this.name = ''
-  this.type = 'text'
-  this.required = false
-  this.showOnEmails = false
-}
-
-const initialCategories = [
-  {
-    name: 'tickets',
-    extraFields: [
-      {
-        name: 'ticket_notes',
-        required: false,
-        type: 'text',
-        showOnEmails: false
-      }
-    ]
-  }
-]
 
 
 export default class Admin extends Component
