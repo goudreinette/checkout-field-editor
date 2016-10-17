@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class UtilsTest extends TestCase
 {
-    function test_process_save()
+    function testProcessSave()
     {
         $extraFieldsByCategory = [
             [
@@ -31,5 +31,27 @@ class UtilsTest extends TestCase
         $this->assertFalse($result[0]['extraFields'][0]['required'], '"false" means false, mixed up by form data');
         $this->assertEquals($result[1]['extraFields'], [], 'extraFields should always be an array');
         $this->assertEquals($result[2]['extraFields'], []);
+    }
+
+    function testFindBy()
+    {
+        $shoes = [
+            [
+                'type' => 'sneakers',
+                'color' => 'red'
+            ],
+
+            [
+                'type' => 'boatshoes',
+                'color' => 'brown'
+            ]
+        ];
+
+        $result = Utils::findBy('color', 'red', $shoes);
+        $this->assertEquals($result, $shoes[0]);
+        $result = Utils::findBy('type', 'boatshoes', $shoes);
+        $this->assertEquals($result, $shoes[1]);
+        $result = Utils::findBy('color', 'green', $shoes);
+        $this->assertNull($result);
     }
 }

@@ -3,9 +3,12 @@
 
 class Utils
 {
-    static function findBy ($key, $val, $array)
+    /**
+     * Find the item where item[key] is value in array
+     */
+    static function findBy ($key, $val, $items)
     {
-        foreach ($array as $item) {
+        foreach ($items as $item) {
             if ($item[$key] == $val)
             return $item;
         }
@@ -18,17 +21,16 @@ class Utils
         return $titleCased;
     }
 
-    static function getCategoriesByNames ($extraFieldsByCategory, $categoryNames)
+    /**
+     * Get all item's who's key matches one of values
+     */
+    static function mapFindBy ($key, $value, $items, $values)
     {
-        $categories = array_map(function ($categoryName) {
-            return findBy('name', $categoryName, $extraFieldsByCategory);
-        }, $categoryNames);
+        $categories = array_map(function ($value) use ($key, $items){
+            return findBy($key, $value, $items);
+        }, $values);
 
-        $notNull = array_filter($categories, function ($categoryName) {
-            return isset($categoryName);
-        });
-
-        return $notNull;
+        return array_filter($notNull);
     }
 
 
