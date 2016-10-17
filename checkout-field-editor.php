@@ -1,4 +1,4 @@
-<?php namespace ConditionalCheckoutFields;
+<?php namespace CheckoutFieldEditor;
 
 /*
 Plugin Name: Conditional Checkout Fields

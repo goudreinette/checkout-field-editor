@@ -1,12 +1,12 @@
-<?php namespace ConditionalCheckoutFields;
+<?php namespace CheckoutFieldEditor;
 
 // when on checkout,
 // get categories,
 // show extra fields that belong to product's category
 
-add_filter('woocommerce_after_order_notes', 'ConditionalCheckoutFields\renderExtraFields');
-add_action('woocommerce_checkout_process', 'ConditionalCheckoutFields\validate');
-add_action('woocommerce_checkout_update_order_meta', 'ConditionalCheckoutFields\handleSave');
+add_filter('woocommerce_after_order_notes', 'CheckoutFieldEditor\renderExtraFields');
+add_action('woocommerce_checkout_process', 'CheckoutFieldEditor\validate');
+add_action('woocommerce_checkout_update_order_meta', 'CheckoutFieldEditor\handleSave');
 
 
 function handleSave ()

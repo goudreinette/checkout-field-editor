@@ -1,4 +1,4 @@
-<?php namespace ConditionalCheckoutFields;
+<?php namespace CheckoutFieldEditor;
 
 
 class AdminTest extends \PHPUnit_Framework_TestCase

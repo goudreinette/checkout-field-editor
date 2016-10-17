@@ -1,4 +1,4 @@
-<?php namespace ConditionalCheckoutFields;
+<?php namespace CheckoutFieldEditor;
 
 function getFields ()
 {

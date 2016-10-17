@@ -5,7 +5,7 @@ import logo from '../public/logo.svg'
 import '../public/Admin.css'
 import CategoriesHeader from './CategoriesHeader'
 import ExtraFields from './ExtraFields'
-
+div
 update.extend('$move', ([a, b], arr) =>
 {
   return [...arr.move(a, b)]

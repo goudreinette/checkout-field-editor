@@ -1,8 +1,8 @@
-<?php namespace ConditionalCheckoutFields;
+<?php namespace CheckoutFieldEditor;
 
-add_action('admin_menu', 'ConditionalCheckoutFields\addSubmenu');
-add_action('wp_ajax_saveCheckoutFields', 'ConditionalCheckoutFields\saveCheckoutFields');
-add_action('wp_ajax_nopriv_saveCheckoutFields', 'ConditionalCheckoutFields\saveCheckoutFields');
+add_action('admin_menu', 'CheckoutFieldEditor\addSubmenu');
+add_action('wp_ajax_saveCheckoutFields', 'CheckoutFieldEditor\saveCheckoutFields');
+add_action('wp_ajax_nopriv_saveCheckoutFields', 'CheckoutFieldEditor\saveCheckoutFields');
 
 
 function addSubmenu()
@@ -13,7 +13,7 @@ function addSubmenu()
         'Checkout Fields',
         'manage_woocommerce',
         'checkout_field_editor',
-        'ConditionalCheckoutFields\showAdmin'
+        'CheckoutFieldEditor\showAdmin'
     );
 }
 
