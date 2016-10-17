@@ -1,13 +1,16 @@
 <?php namespace CheckoutFieldEditor;
 
-function getFields ()
+class Option
 {
-    $result = get_option('ccf');
-    return $result;
-}
+    static function getFields ()
+    {
+        $result = get_option('ccf');
+        return $result;
+    }
 
-function storeFields ($fields)
-{
-    $result = update_option('ccf', $fields);
-    return $result;
+    static function storeFields ($fields)
+    {
+        $result = update_option('ccf', $fields);
+        return $result;
+    }
 }

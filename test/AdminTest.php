@@ -1,7 +1,8 @@
 <?php namespace CheckoutFieldEditor;
 
+use PHPUnitFrameworkTestCase;
 
-class AdminTest extends \PHPUnit_Framework_TestCase
+class UtilsTest extends TestCase
 {
     function test_()
     {

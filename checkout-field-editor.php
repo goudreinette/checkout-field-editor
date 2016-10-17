@@ -12,4 +12,5 @@ License: A "Slug" license name e.g. GPL2
 
 require __DIR__ . '/vendor/autoload.php';
 
+
 new Admin();
