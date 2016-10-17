@@ -54,4 +54,9 @@ class UtilsTest extends TestCase
         $result = Utils::findBy('color', 'green', $shoes);
         $this->assertNull($result);
     }
+
+    function testFindByEach()
+    {
+        
+    }
 }

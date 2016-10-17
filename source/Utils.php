@@ -13,6 +13,18 @@ class Utils
             return $item;
         }
     }
+    
+    /**
+     * Get all item's who's key matches one of values
+     */
+    static function findByEach ($key, $value, $items, $values)
+    {
+        $categories = array_map(function ($value) use ($key, $items){
+            return findBy($key, $value, $items);
+        }, $values);
+
+        return array_filter($notNull);
+    }
 
     static function titleCase ($snake_cased_string)
     {
@@ -21,17 +33,6 @@ class Utils
         return $titleCased;
     }
 
-    /**
-     * Get all item's who's key matches one of values
-     */
-    static function mapFindBy ($key, $value, $items, $values)
-    {
-        $categories = array_map(function ($value) use ($key, $items){
-            return findBy($key, $value, $items);
-        }, $values);
-
-        return array_filter($notNull);
-    }
 
 
     static function array_flatten($array)
