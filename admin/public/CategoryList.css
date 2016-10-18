@@ -1,3 +1,6 @@
+/**
+ * Category List
+ */
 #category-list {
   width: 250px;
   background-color: #dedddd;
@@ -15,6 +18,9 @@
   margin-top: 50px;
 }
 
+/**
+ * Category
+ */
 .category {
   width: 100%;
   font-size: 14px;
@@ -46,5 +52,34 @@ div.category {
 }
 
 .category.active {
-  border-left: 2px solid rgb(65, 172, 232);
+  border-left: 2px solid #ddd;
+}
+
+.category.exists {
+  border-left: 2px solid rgb(65, 172, 232) !important;
+}
+
+/**
+ * Suggestions
+ */
+#suggestions {
+  background-color: white;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  border-left: 2px solid #eee;
+}
+
+.suggestion {
+  height: 30px;
+  padding: 0 30px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion.active {
+  color: rgb(44, 128, 175);
 }

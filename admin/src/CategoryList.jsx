@@ -30,6 +30,7 @@ export default function CategoriesHeader(props)
             name={category.name}
             toggleEditing={props.toggleEditing}
             switchTab={props.switchTab}
+            categoryNames={props.categoryNames}
             />
           )
         }

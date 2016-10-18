@@ -13,8 +13,6 @@ update.extend('$move', ([a, b], arr) =>
   return [...arr.move(a, b)]
 })
 
-
-
 export default class Admin extends Component
 {
   constructor()
@@ -34,9 +32,9 @@ export default class Admin extends Component
       action: 'saveCheckoutFields',
       categories: this.state.categories,
     }, (res) =>
-      {
-        console.log(res)
-      })
+    {
+      console.log(res)
+    })
   }
 
   switchTab(index)
@@ -125,7 +123,7 @@ export default class Admin extends Component
 
   filterEmptyCategories(categories)
   {
-    console.log(arguments)
+    console.log(categories)
     return categories.filter(c => c.name != '')
   }
 
@@ -144,15 +142,15 @@ export default class Admin extends Component
           stopEditing={this.stopEditing.bind(this)}
           switchTab={this.switchTab.bind(this)}
           save={this.save.bind(this)}
-          />
+        />
         <ExtraFields
-          fields={this.state.categories[this.state.currentTab].extraFields}
+          fields={this.state.currentTab ? this.state.categories[this.state.currentTab].extraFields : []}
           addField={this.addField.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
           updateField={this.updateField.bind(this)}
           moveField={this.moveField.bind(this)}
           removeField={this.removeField.bind(this)}
-          />
+        />
       </div>
     )
   }
