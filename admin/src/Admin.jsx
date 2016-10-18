@@ -21,8 +21,8 @@ export default class Admin extends Component
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: initialCategories,
-      categoryNames: categoryNames
+      categories: window.initialCategories || initialCategories,
+      categoryNames: window.categoryNames || []
     }
   }
 
