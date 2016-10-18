@@ -33,6 +33,7 @@ class Admin
         wp_enqueue_script('ccf', plugin_dir_url(__FILE__) . '../admin/build/static/js/main.js');
         wp_enqueue_style('ccf', plugin_dir_url(__FILE__) . '../admin/build/static/css/main.css');
         wp_localize_script('ccf', 'categories', Option::getFields());
+        wp_localize_script('ccf', 'categoryNames', Utils::getProductCategories());
     }
 
     function saveCheckoutFields()

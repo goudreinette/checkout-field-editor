@@ -78,6 +78,7 @@ div.category {
   align-items: center;
   font-size: 14px;
   border-bottom: 1px solid #eee;
+  margin: 0;
 }
 
 .suggestion.active {

@@ -1,12 +1,8 @@
 <?php namespace CheckoutFieldEditor;
 
-// when on checkout,
-// get categories,
-// show extra fields that belong to product's category
-
-
 /**
- *
+ * Responsile for displaying the extra checkout fields.
+ * Checkout fields shown depends on the categories of the cart contents
  */
 class Checkout extends AnotherClass
 {

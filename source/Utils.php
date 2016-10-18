@@ -13,7 +13,7 @@ class Utils
             return $item;
         }
     }
-    
+
     /**
      * Get all item's who's key matches one of values
      */
@@ -79,5 +79,15 @@ class Utils
         }
 
         return $categories;
+    }
+
+    /**
+     * Get all defined product categories.
+     * @return String[]
+     */
+    static function getProductCategories()
+    {
+        $all_categories = get_terms(['taxonomy' => 'product_cat']);
+        return array_column($all_categories, 'name');
     }
 }

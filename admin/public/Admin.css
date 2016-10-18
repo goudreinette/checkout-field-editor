@@ -13,6 +13,10 @@ h1 {
     height: 100%;
 }
 
+#root * {
+  font-size: 14px !important;
+}
+
 #admin {
     display: flex;
     flex-direction: row;

@@ -55,8 +55,16 @@ class UtilsTest extends TestCase
         $this->assertNull($result);
     }
 
-    function testFindByEach()
+    function testGetApplicableCategoryNamesForCart()
     {
+        $cartContents = [
+            123456 => [
+                
+            ],
 
+            234567 => [
+
+            ]
+        ];
     }
 }
