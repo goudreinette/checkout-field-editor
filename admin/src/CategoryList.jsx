@@ -10,7 +10,7 @@ export default function CategoriesHeader(props)
 {
   return (
     <aside id='category-list'>
-      <CategoryListHeader/>
+      <CategoryListHeader addCategory={props.addCategory}/>
       <div id="category-list-wrapper">
         {
           props.categories.map((category, i) =>
@@ -21,6 +21,7 @@ export default function CategoriesHeader(props)
               key={i}
               updateName={props.updateName}
               stopEditing={props.stopEditing}
+              categoryNames={props.categoryNames}
               />
           : <Category
             i={i}

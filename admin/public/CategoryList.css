@@ -28,4 +28,23 @@
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 3px;
+  border: none;
+  border-left: 2px solid white;
+  text-align: left;
+}
+
+div.category {
+  transition: all 0.2s;
+}
+
+.category:not(:hover) .remove {
+  opacity: 0.4;
+}
+
+.category:hover {
+  border-left: 2px solid #eee;
+}
+
+.category.active {
+  border-left: 2px solid rgb(65, 172, 232);
 }

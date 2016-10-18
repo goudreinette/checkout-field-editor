@@ -25,3 +25,9 @@ export const initialCategories = [
     ]
   }
 ]
+
+export const categoryNames = [
+  'T-shirts',
+  'Tickets',
+  'Women'
+]

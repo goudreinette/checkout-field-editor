@@ -5,7 +5,7 @@ import logo from '../public/logo.svg'
 import '../public/Admin.css'
 import CategoryList from './CategoryList'
 import ExtraFields from './ExtraFields'
-import {Field, Category, initialCategories} from './Model'
+import {Field, Category, initialCategories, categoryNames} from './Model'
 
 
 update.extend('$move', ([a, b], arr) =>
@@ -23,7 +23,8 @@ export default class Admin extends Component
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: initialCategories
+      categories: initialCategories,
+      categoryNames: categoryNames
     }
   }
 
@@ -135,6 +136,7 @@ export default class Admin extends Component
         <CategoryList
           editingCategory={this.state.editingCategory}
           categories={this.state.categories}
+          categoryNames={this.state.categoryNames}
           addCategory={this.addCategory.bind(this)}
           toggleEditing={this.editCategory.bind(this)}
           currentTab={this.state.currentTab}
