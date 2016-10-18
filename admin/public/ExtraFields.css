@@ -6,7 +6,8 @@
 }
 
 #extra-fields-wrapper {
-  padding: 75px 25px;
+  padding: 75px 25px 25px 25px;
+  height: 100%;
 }
 
 
@@ -76,7 +77,7 @@
 }
 
 
-.field .remove {
+.remove {
   /*background-image: url('./remove.svg');*/
   width: 50px;
   height: 50px;
@@ -90,7 +91,7 @@
   align-items: center;
 }
 
-.field .remove i {
+.remove i {
   width: 16px;
   height: 16px;
 }
@@ -100,7 +101,7 @@
 }
 
 
-.field .remove:hover {
+.remove:hover {
   opacity: 1;
   filter: saturate(1);
 }

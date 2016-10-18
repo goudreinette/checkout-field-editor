@@ -11,27 +11,28 @@ export default function CategoriesHeader(props)
   return (
     <aside id='category-list'>
       <CategoryListHeader/>
-      {
-        props.categories.map((category, i) =>
+      <div id="category-list-wrapper">
+        {
+          props.categories.map((category, i) =>
 
-        props.editingCategory && props.currentTab == i
-          ? <EditingCategory
-            name={category.name}
+          props.editingCategory && props.currentTab == i
+            ? <EditingCategory
+              name={category.name}
+              key={i}
+              updateName={props.updateName}
+              stopEditing={props.stopEditing}
+              />
+          : <Category
+            i={i}
             key={i}
-            updateName={props.updateName}
-            stopEditing={props.stopEditing}
+            active={props.currentTab == i}
+            name={category.name}
+            toggleEditing={props.toggleEditing}
+            switchTab={props.switchTab}
             />
-        : <Category
-          i={i}
-          key={i}
-          active={props.currentTab == i}
-          name={category.name}
-          toggleEditing={props.toggleEditing}
-          switchTab={props.switchTab}
-          />
-        )
-      }
-      
+          )
+        }
+      </div>
     </aside>
 )
 }

@@ -2,49 +2,30 @@
   width: 250px;
   background-color: #dedddd;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #category-list header {
   border-right: 1px solid #eee;
 }
 
-#category-list #add {
-  opacity: 0.2;
-  padding: 0px 15px;
+#category-list-wrapper {
+  height: calc(100% - 50px);
+  margin-top: 50px;
 }
 
-#category-list #add i {
-  width: 25px;
-  height: 25px;
-}
-
-#category-list #add:hover {
-  opacity: 0.4;
-  background-color: #f1f1f1;
-}
-
-#save {
-  margin-left: auto;
-  background-size: 35%;
-  opacity: 0.2;
-  padding: 0px 15px;
-}
-
-#save i {
-  width: 25px;
-  height: 25px;
-}
-
-#category-list #add:hover, #save:hover {
-  opacity: 0.4;
-  background-color: #f1f1f1;
-}
-
-input, .category {
-  width: 120px;
+.category {
+  width: 100%;
   font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 75px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 3px;
 }

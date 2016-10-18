@@ -13,7 +13,7 @@ export default function Field({name, type, required, showOnEmails, updateField, 
         placeholder="Field"
         value={title(name)}
         onChange={e => updateField(i, 'name', snakeCase(e.target.value))}
-        />
+      />
 
       <div className="middle">
         <select className="type" value={type} onChange={e => updateField(i, 'type', e.target.value)}>

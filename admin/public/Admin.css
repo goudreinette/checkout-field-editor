@@ -18,3 +18,35 @@ h1 {
     flex-direction: row;
     height: 100%;
 }
+
+#category-list #add {
+  opacity: 0.2;
+  padding: 0px 15px;
+}
+
+#category-list #add i {
+  width: 25px;
+  height: 25px;
+}
+
+#category-list #add:hover {
+  opacity: 0.4;
+  background-color: #f1f1f1;
+}
+
+#save {
+  margin-left: auto;
+  background-size: 35%;
+  opacity: 0.2;
+  padding: 0px 15px;
+}
+
+#save i {
+  width: 25px;
+  height: 25px;
+}
+
+#category-list #add:hover, #save:hover {
+  opacity: 0.4;
+  background-color: #f1f1f1;
+}
