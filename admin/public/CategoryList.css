@@ -23,19 +23,19 @@
   background-color: #f1f1f1;
 }
 
-#category-list #save {
+#save {
   margin-left: auto;
   background-size: 35%;
   opacity: 0.2;
   padding: 0px 15px;
 }
 
-#category-list #save i {
+#save i {
   width: 25px;
   height: 25px;
 }
 
-#category-list #add:hover, #category-list #save:hover {
+#category-list #add:hover, #save:hover {
   opacity: 0.4;
   background-color: #f1f1f1;
 }
