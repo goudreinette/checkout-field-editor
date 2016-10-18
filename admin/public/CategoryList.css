@@ -36,6 +36,7 @@
   padding-right: 3px;
   border: none;
   border-left: 2px solid white;
+  border-bottom: 1px solid #eee;
   text-align: left;
 }
 
@@ -49,14 +50,17 @@ div.category {
 
 .category:hover {
   border-left: 2px solid #eee;
+  background-color: #fafafa
 }
 
 .category.active {
-  border-left: 2px solid #ddd;
+  border: none !important;
+  border-left: 2px solid  !important;
+  margin: 0 !important;
 }
 
 .category.exists {
-  border-left: 2px solid rgb(65, 172, 232) !important;
+  font-weight: bold;
 }
 
 /**
@@ -73,7 +77,6 @@ div.category {
 .suggestion {
   height: 30px;
   padding: 0 30px;
-  border-top: 1px solid #eee;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -82,5 +85,5 @@ div.category {
 }
 
 .suggestion.active {
-  color: rgb(44, 128, 175);
+  font-weight: bold;
 }

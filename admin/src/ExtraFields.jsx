@@ -4,11 +4,11 @@ import '../public/ExtraFields.css'
 import Field from './Field.jsx'
 import ExtraFieldsHeader from './ExtraFieldsHeader'
 
-export default function ExtraFields({fields, addField, updateField, moveField, removeField})
+export default function ExtraFields({fields, addField, updateField, moveField, removeField, save})
 {
   return (
     <main id='extra-fields'>
-      <ExtraFieldsHeader/>
+      <ExtraFieldsHeader save={save}/>
       <div id='extra-fields-wrapper'>
         <Sortable onChange={(_, __, {oldIndex, newIndex}) => moveField(oldIndex, newIndex)}>
           {

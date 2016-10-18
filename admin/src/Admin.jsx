@@ -7,6 +7,7 @@ import CategoryList from './CategoryList'
 import ExtraFields from './ExtraFields'
 import {Field, Category, initialCategories, categoryNames} from './Model'
 
+window.initialCategories = initialCategories
 
 update.extend('$move', ([a, b], arr) =>
 {
@@ -21,7 +22,7 @@ export default class Admin extends Component
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: window.initialCategories || initialCategories,
+      categories: window.categories.length ? window.categories : initialCategories,
       categoryNames: window.categoryNames || []
     }
   }
@@ -150,7 +151,6 @@ export default class Admin extends Component
           updateName={this.updateName.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
           switchTab={this.switchTab.bind(this)}
-          save={this.save.bind(this)}
         />
         <ExtraFields
           fields={this.state.categories.length ? this.state.categories[this.state.currentTab].extraFields : []}
@@ -159,6 +159,7 @@ export default class Admin extends Component
           updateField={this.updateField.bind(this)}
           moveField={this.moveField.bind(this)}
           removeField={this.removeField.bind(this)}
+          save={this.save.bind(this)}
         />
       </div>
     )
