@@ -1,31 +1,41 @@
-#categories #add {
+#category-list {
+  width: 250px;
+  background-color: #dedddd;
+  position: relative;
+}
+
+#category-list header {
+  border-right: 1px solid #eee;
+}
+
+#category-list #add {
   opacity: 0.2;
   padding: 0px 15px;
 }
 
-#categories #add i {
+#category-list #add i {
   width: 25px;
   height: 25px;
 }
 
-#categories #add:hover {
+#category-list #add:hover {
   opacity: 0.4;
   background-color: #f1f1f1;
 }
 
-#categories #save {
+#category-list #save {
   margin-left: auto;
   background-size: 35%;
   opacity: 0.2;
   padding: 0px 15px;
 }
 
-#categories #save i {
+#category-list #save i {
   width: 25px;
   height: 25px;
 }
 
-#categories #add:hover, #categories #save:hover {
+#category-list #add:hover, #category-list #save:hover {
   opacity: 0.4;
   background-color: #f1f1f1;
 }

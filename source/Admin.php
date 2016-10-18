@@ -13,8 +13,8 @@ class Admin
     {
         add_submenu_page(
             'woocommerce',
-            'Checkout Fields',
-            'Checkout Fields',
+            'Checkout Field Editor',
+            'Checkout Field Editor',
             'manage_woocommerce',
             'checkout_field_editor',
             [$this, 'showAdmin']
@@ -24,7 +24,7 @@ class Admin
 
     function showAdmin()
     {
-        echo "<h1>Checkout Fields by Category</h1>";
+        echo "<h1>Checkout Field Editor</h1>";
         echo "<div id='root'></div>";
         wp_enqueue_script('ccf', plugin_dir_url(__FILE__) . '../admin/build/static/js/main.js');
         wp_enqueue_style('ccf', plugin_dir_url(__FILE__) . '../admin/build/static/css/main.css');
@@ -34,12 +34,7 @@ class Admin
     function saveCheckoutFields()
     {
         $categories = $_POST['categories'];
-
-
-        // FIXME ---------------------------------------------
-
-        // --------------------------------------------------
-
+        $categories = Utils::processSave($categories);
         Option::storeFields($categories);
         wp_send_json(Option::getFields());
     }

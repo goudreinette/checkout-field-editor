@@ -7,12 +7,11 @@ html {
   height: 100%;
 }
 
-/*body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  height: 100%;
-}*/
+body {
+  height: calc(100% - 50px);
+}
+
+
 
 #root, #admin {
   height: 100%;
@@ -26,11 +25,10 @@ html {
 #root {
   margin: 25px;
   background-color: #eee;
-  width: calc(100% - 75px);
+  width: calc(100% - 50px);
 }
 
 main {
-  height: calc(100% - 50px);
 }
 
 
@@ -39,8 +37,11 @@ main {
  */
 header {
   height: 50px;
-  background-color: #ddd;
+  width: 100%;
+  background-color: white;
   display: flex;
+  position: absolute;
+  top: 0;
 }
 
 header > * {
@@ -63,6 +64,17 @@ header > *:hover {
 header .active {
   background-color: #eee;
   color: rgba(0, 0, 0, 0.9);
+}
+
+header button {
+  margin-left: auto;
+}
+
+header h5 {
+  background: none;
+  margin-left: auto;
+  font-weight: normal;
+  color: #292929;
 }
 
 

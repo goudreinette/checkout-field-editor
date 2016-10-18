@@ -3,7 +3,7 @@ import update from 'immutability-helper'
 import 'array.prototype.move'
 import logo from '../public/logo.svg'
 import '../public/Admin.css'
-import CategoriesHeader from './CategoriesHeader'
+import CategoryList from './CategoryList'
 import ExtraFields from './ExtraFields'
 import {Field, Category, initialCategories} from './Model'
 
@@ -23,13 +23,13 @@ export default class Admin extends Component
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: window.categories.length ? window.categories : initialCategories
+      categories: initialCategories
     }
   }
 
   save()
   {
-    jQuery.post(ajaxurl, {
+    window.jQuery.post(window.ajaxurl, {
       action: 'saveCheckoutFields',
       categories: this.state.categories,
     }, (res) =>
@@ -132,7 +132,7 @@ export default class Admin extends Component
   {
     return (
       <div id="admin">
-        <CategoriesHeader
+        <CategoryList
           editingCategory={this.state.editingCategory}
           categories={this.state.categories}
           addCategory={this.addCategory.bind(this)}
