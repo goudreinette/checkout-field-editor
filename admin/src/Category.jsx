@@ -10,7 +10,7 @@ export default props => (
         }>
         {props.name}
 
-        <button className="remove" onClick={_ => _} >
+        <button className="remove" onClick={e => props.removeCategory(e, props.i)} >
             <InlineSVG src={require('../public/remove.svg')} />
         </button>
     </div>

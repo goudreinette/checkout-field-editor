@@ -65,9 +65,17 @@ export default class Admin extends Component
     })
   }
 
-  removeCategory(index)
+  removeCategory(e, index)
   {
-
+    e.stopPropagation()
+    this.stopEditing()
+    this.setState(
+      update(this.state, {
+        categories: { $splice: [[index, 1]] },
+        editCategory: {$set: false},
+        currentTab: {$set: (index - 1) >= 0 ? index - 1 : 0 }
+      })
+    )
   }
 
   addField()
@@ -137,6 +145,7 @@ export default class Admin extends Component
           categoryNames={this.state.categoryNames}
           addCategory={this.addCategory.bind(this)}
           toggleEditing={this.editCategory.bind(this)}
+          removeCategory={this.removeCategory.bind(this)}
           currentTab={this.state.currentTab}
           updateName={this.updateName.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
@@ -144,7 +153,7 @@ export default class Admin extends Component
           save={this.save.bind(this)}
         />
         <ExtraFields
-          fields={this.state.currentTab ? this.state.categories[this.state.currentTab].extraFields : []}
+          fields={this.state.categories.length ? this.state.categories[this.state.currentTab].extraFields : []}
           addField={this.addField.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
           updateField={this.updateField.bind(this)}

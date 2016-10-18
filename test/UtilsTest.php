@@ -57,6 +57,6 @@ class UtilsTest extends TestCase
 
     function testFindByEach()
     {
-        
+
     }
 }

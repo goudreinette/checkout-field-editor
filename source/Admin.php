@@ -1,5 +1,9 @@
 <?php namespace CheckoutFieldEditor;
 
+/**
+ * Responsible for showing the Checkout Field Editor,
+ * providing the saved extraFields and classNames, and saving the extra fields.
+ */
 class Admin
 {
     function __construct()
