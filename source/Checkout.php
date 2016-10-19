@@ -8,38 +8,51 @@ class Checkout
 {
     function __construct()
     {
-        add_filter('woocommerce_after_order_notes', 'CheckoutFieldEditor\renderExtraFields');
-        add_action('woocommerce_checkout_process', 'CheckoutFieldEditor\validate');
-        add_action('woocommerce_checkout_update_order_meta', 'CheckoutFieldEditor\handleSave');
+        add_filter('woocommerce_after_order_notes', [$this, 'renderExtraFields']);
+        add_action('woocommerce_checkout_process', [$this, 'validate']);
+        add_action('woocommerce_checkout_update_order_meta', [$this, 'handleSave']);
     }
 
-    function handleSave()
+    function handleSave($order_id)
     {
-        $categoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
-        $extraFieldsByCategory = Option::getFields();
+        $categoryNames         = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
+        $extraFieldsByCategory = OptionMeta::getFields();
+        $order_meta            = [];
 
-        foreach ($categoryNames as $key => $value) {
-            # code...
+        foreach ($categoryNames as $categoryName) {
+            $order_meta[$categoryName] = [];
+            $category                  = Utils::findBy('name', $categoryName, $extraFieldsByCategory);
+
+            foreach ($category['extraFields'] as $field) {
+                $order_meta[$categoryName][$field['name']] = $_POST[$field['name']];
+            }
         }
+
+        update_post_meta($order_id, OptionMeta::$meta_key, $order_meta);
     }
 
 
     function validate()
     {
-        $extraFieldsByCategory   = Option::getFields();
+        $extraFieldsByCategory   = OptionMeta::getFields();
         $applicableCategoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
-        $applicableCategories    = Utils::getCategoresByNames($extraFieldsByCategory, $applicableCategoryNames);
+        $applicableCategories    = Utils::findByEach('name', $applicableCategoryNames, $extraFieldsByCategory);
         $applicableFields        = Utils::array_flatten(array_column($applicableCategories, 'extraFields'));
 
-        if (!$_POST['my_field_name'])
-            wc_add_notice(__('Please enter something into this new shiny field.'), 'error');
+
+        foreach ($applicableFields as $field) {
+            if (!$_POST[$field['name']] && $field['required']) {
+                $titleCasedName = Utils::titleCase($field['name']);
+                wc_add_notice("The field $titleCasedName is required.", 'error');
+            }
+        }
     }
 
 
     function renderExtraFields($checkout)
     {
         // Determine which extra fields need to be displayed for the given cart...
-        $extraFieldsByCategory   = Option::getFields();
+        $extraFieldsByCategory   = OptionMeta::getFields();
         $applicableCategoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
 
         // Render every applicable category
@@ -63,11 +76,12 @@ class Checkout
 
     function renderField($field)
     {
-        woocommerce_form_field($field['name'], [
-            'type'        => strtolower($field['type']), // TODO: <select/>
-            'label'       => Utils::titleCase($field['name']),
-            'placeholder' => Utils::titleCase($field['name']),
-            'class'       => ['my-field-class form-row-wide'],
-            'required'    => $field['required']]);
+        woocommerce_form_field($field['name'],
+            [
+                'type'        => strtolower($field['type']), // TODO: <select/>
+                'label'       => Utils::titleCase($field['name']),
+                'placeholder' => Utils::titleCase($field['name']),
+                'class'       => ['my-field-class form-row-wide'],
+                'required'    => $field['required']]);
     }
 }
