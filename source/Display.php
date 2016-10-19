@@ -1,5 +1,9 @@
 <?php namespace CheckoutFieldEditor;
 
+/**
+ * Class Display
+ * TODO: thankyou page
+ */
 class Display
 {
     function __construct()
@@ -32,7 +36,7 @@ class Display
         $titleCasedName = Utils::titleCase($fieldName);
         if ($value == "")
             $value = " - ";
-        
+
         echo "<li>";
         echo "<strong>$titleCasedName: </strong> $value";
         echo "</li>";
