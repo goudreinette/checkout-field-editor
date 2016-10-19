@@ -3,8 +3,7 @@
 /**
  * Responsile for displaying the extra checkout fields.
  * Checkout fields shown depends on the categories of the cart contents
- */
-class Checkout extends AnotherClass
+ */class Checkout
 {
     function __construct()
     {
@@ -13,9 +12,13 @@ class Checkout extends AnotherClass
         add_action('woocommerce_checkout_update_order_meta', 'CheckoutFieldEditor\handleSave');
     }
 
-    function handleSave ()
+    function handleSave ($order_id)
     {
-        return;
+        $order = WC()->order_factory->get_order($order_id);
+
+        // get all fields
+        // set under category
+
     }
 
 

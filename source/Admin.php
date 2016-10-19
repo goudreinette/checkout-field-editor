@@ -13,6 +13,8 @@ class Admin
         add_action('wp_ajax_nopriv_saveCheckoutFields', [$this, 'saveCheckoutFields']);
     }
 
+
+
     function addSubmenu()
     {
         add_submenu_page(
