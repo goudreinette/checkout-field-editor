@@ -15,3 +15,4 @@ require __DIR__ . '/vendor/autoload.php';
 
 new Admin();
 new Checkout();
+new Display();
