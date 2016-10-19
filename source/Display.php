@@ -2,13 +2,13 @@
 
 /**
  * Class Display
- * TODO: thankyou page
  */
 class Display
 {
     function __construct()
     {
         add_action('woocommerce_email_customer_details', [$this, 'render']);
+        add_action('woocommerce_order_details_after_order_table', [$this, 'render']);
     }
 
     function render($order)
@@ -23,7 +23,7 @@ class Display
 
     function renderCategory($categoryName, $category)
     {
-        echo "<h2>$categoryName</h2>";
+        echo "<h2 style='display: block;'>$categoryName</h2>";
         echo "<ul>";
         foreach ($category as $fieldName => $value) {
             $this->renderField($fieldName, $value);
