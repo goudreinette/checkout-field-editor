@@ -3,7 +3,8 @@
 /**
  * Responsile for displaying the extra checkout fields.
  * Checkout fields shown depends on the categories of the cart contents
- */class Checkout
+ */
+class Checkout
 {
     function __construct()
     {
@@ -12,61 +13,61 @@
         add_action('woocommerce_checkout_update_order_meta', 'CheckoutFieldEditor\handleSave');
     }
 
-    function handleSave ($order_id)
+    function handleSave()
     {
-        $order = WC()->order_factory->get_order($order_id);
+        $categoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
+        $extraFieldsByCategory = Option::getFields();
 
-        // get all fields
-        // set under category
-
+        foreach ($categoryNames as $key => $value) {
+            # code...
+        }
     }
 
 
-    function validate ()
+    function validate()
     {
-        $extraFieldsByCategory   = getFields();
-        $applicableCategoryNames = getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
-        $applicableCategories    = getCategoresByNames($extraFieldsByCategory, $applicableCategoryNames);
-        $applicableFields        = array_flatten(array_column($applicableCategories, 'extraFields'));
+        $extraFieldsByCategory   = Option::getFields();
+        $applicableCategoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
+        $applicableCategories    = Utils::getCategoresByNames($extraFieldsByCategory, $applicableCategoryNames);
+        $applicableFields        = Utils::array_flatten(array_column($applicableCategories, 'extraFields'));
 
-        if ( ! $_POST['my_field_name'] )
-            wc_add_notice( __( 'Please enter something into this new shiny field.' ), 'error' );
+        if (!$_POST['my_field_name'])
+            wc_add_notice(__('Please enter something into this new shiny field.'), 'error');
     }
 
 
-    function renderExtraFields ($checkout)
+    function renderExtraFields($checkout)
     {
         // Determine which extra fields need to be displayed for the given cart...
-        $extraFieldsByCategory = getFields();
-        $applicableCategoryNames = getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
+        $extraFieldsByCategory   = Option::getFields();
+        $applicableCategoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
 
         // Render every applicable category
         foreach ($applicableCategoryNames as $categoryName) {
             // When there are extra fields defined for the category...
-            $category = findBy('name', $categoryName, $extraFieldsByCategory);
+            $category = Utils::findBy('name', $categoryName, $extraFieldsByCategory);
             if (isset($category))
-                renderCategory($category);
+                $this->renderCategory($category);
         }
     }
 
-    function renderCategory ($category)
+    function renderCategory($category)
     {
         echo "<div>";
         echo "<h3>$category[name]</h3>";
         foreach ($category['extraFields'] as $field) {
-            renderField($field);
+            $this->renderField($field);
         }
         echo "</div>";
     }
 
-    function renderField ($field)
+    function renderField($field)
     {
         woocommerce_form_field($field['name'], [
-            'type'          => strtolower($field['type']), // TODO: <select/>
-            'label'         => titleCase($field['name']),
-            'placeholder'   => titleCase($field['name']),
-            'class'         => ['my-field-class form-row-wide'],
-            'required'      => $field['required']
-        ]);
+            'type'        => strtolower($field['type']), // TODO: <select/>
+            'label'       => Utils::titleCase($field['name']),
+            'placeholder' => Utils::titleCase($field['name']),
+            'class'       => ['my-field-class form-row-wide'],
+            'required'    => $field['required']]);
     }
 }
