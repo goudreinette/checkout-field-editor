@@ -1,12 +1,21 @@
 import React from 'react'
-import addIcon from 'svg-inline!../public/add.svg'
+import Spinner from 'react-spinkit'
 import InlineSVG from 'svg-inline-react'
 
 
 export default props =>
-<header>
-      <h5>Extra Fields</h5>
-      <button id="save" onClick={props.save}>
-            <InlineSVG src={require('../public/save.svg')} />
-      </button>
-</header>
+    <header>
+        <h5>Extra Fields</h5>
+        {
+            props.saving
+                ?
+                <div id="save">
+                    <Spinner spinnerName="wave"/>
+                </div>
+
+                :
+                <button id="save" onClick={props.save}>
+                    <InlineSVG src={require('../public/save.svg')}/>
+                </button>
+        }
+    </header>

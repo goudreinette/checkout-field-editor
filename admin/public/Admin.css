@@ -14,7 +14,7 @@ h1 {
 }
 
 #root * {
-  font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 #admin {
@@ -24,33 +24,45 @@ h1 {
 }
 
 #category-list #add {
-  opacity: 0.2;
-  padding: 0px 15px;
+    opacity: 0.2;
+    padding: 0px 15px;
 }
 
 #category-list #add i {
-  width: 25px;
-  height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 #category-list #add:hover {
-  opacity: 0.4;
-  background-color: #f1f1f1;
+    opacity: 0.4;
+    background-color: #f1f1f1;
 }
 
 #save {
-  margin-left: auto;
-  background-size: 35%;
-  opacity: 0.2;
-  padding: 0px 15px;
+    margin-left: auto;
+    background-size: 35%;
+    opacity: 0.2;
+    padding: 0px;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+#save > div {
+    width: 40px;
+    height: 40px;
+    margin: auto;
 }
 
 #save i {
-  width: 25px;
-  height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 #category-list #add:hover, #save:hover {
-  opacity: 0.4;
-  background-color: #f1f1f1;
+    opacity: 0.4;
+    background-color: #f1f1f1;
 }

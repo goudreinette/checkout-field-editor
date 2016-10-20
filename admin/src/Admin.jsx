@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import update from 'immutability-helper'
 import 'array.prototype.move'
 import logo from '../public/logo.svg'
@@ -11,160 +11,161 @@ window.initialCategories = initialCategories
 
 update.extend('$move', ([a, b], arr) =>
 {
-  return [...arr.move(a, b)]
+    return [...arr.move(a, b)]
 })
 
-export default class Admin extends Component
-{
-  constructor()
-  {
-    super()
-    this.state = {
-      currentTab: 0,
-      editingCategory: false,
-      categories: window.categories || initialCategories,
-      categoryNames: window.categoryNames || []
-    }
-  }
-
-  save()
-  {
-    window.jQuery.post(window.ajaxurl, {
-      action: 'saveCheckoutFields',
-      categories: this.state.categories,
-    }, (res) =>
+export default class Admin extends Component {
+    constructor ()
     {
-      console.log(res)
-    })
-  }
+        super()
+        this.state = {
+            currentTab: 0,
+            editingCategory: false,
+            categories: window.categories || initialCategories,
+            categoryNames: window.categoryNames || [],
+            saving: false
+        }
+    }
 
-  switchTab(index)
-  {
-    this.stopEditing()
-    this.setState({ currentTab: index })
-  }
+    save ()
+    {
+        this.setState({saving: true})
 
-  addCategory()
-  {
-    this.stopEditing()
+        if (!window.jQuery)
+            setTimeout(() => this.setState({saving: false}), 2200)
+        else
+            window.jQuery.post(window.ajaxurl, {
+                action: 'saveCheckoutFields',
+                categories: this.state.categories,
+            }, () => this.setState({saving: false}))
+    }
 
-    this.setState(
-      update(this.state, {
-        categories: { $push: [new Category()] },
-        currentTab: { $set: this.state.categories.length },
-        editingCategory: { $set: true }
-      })
-    )
-  }
+    switchTab (index)
+    {
+        this.stopEditing()
+        this.setState({currentTab: index})
+    }
 
-  editCategory(index)
-  {
-    this.stopEditing()
-    this.setState({
-      currentTab: index,
-      editingCategory: true
-    })
-  }
+    addCategory ()
+    {
+        this.stopEditing()
 
-  removeCategory(e, index)
-  {
-    e.stopPropagation()
-    this.stopEditing()
-    this.setState(
-      update(this.state, {
-        categories: { $splice: [[index, 1]] },
-        editCategory: {$set: false},
-        currentTab: {$set: (index - 1) >= 0 ? index - 1 : 0 }
-      })
-    )
-  }
+        this.setState(
+            update(this.state, {
+                categories: {$push: [new Category()]},
+                currentTab: {$set: this.state.categories.length},
+                editingCategory: {$set: true}
+            })
+        )
+    }
 
-  addField()
-  {
-    this.setState(
-      update(this.state, { categories: { [this.state.currentTab]: { extraFields: { $push: [new Field()] } } } })
-    )
-  }
+    editCategory (index)
+    {
+        this.stopEditing()
+        this.setState({
+            currentTab: index,
+            editingCategory: true
+        })
+    }
 
-  moveField(indexA, indexB)
-  {
-    this.setState(
-      update(this.state, { categories: { [this.state.currentTab]: { extraFields: { $move: [indexA, indexB] } } } })
-    )
-  }
+    removeCategory (e, index)
+    {
+        e.stopPropagation()
+        this.stopEditing()
+        this.setState(
+            update(this.state, {
+                categories: {$splice: [[index, 1]]},
+                editCategory: {$set: false},
+                currentTab: {$set: (index - 1) >= 0 ? index - 1 : 0}
+            })
+        )
+    }
 
-  removeField(index)
-  {
-    this.setState(
-      update(this.state, { categories: { [this.state.currentTab]: { extraFields: { $splice: [[index, 1]] } } } })
-    )
-  }
+    addField ()
+    {
+        this.setState(
+            update(this.state, {categories: {[this.state.currentTab]: {extraFields: {$push: [new Field()]}}}})
+        )
+    }
 
-  updateField(index, key, value)
-  {
-    this.setState(update(this.state, {
-      categories: { [this.state.currentTab]: { extraFields: { [index]: { [key]: { $set: value } } } } }
-    }))
-  }
+    moveField (indexA, indexB)
+    {
+        this.setState(
+            update(this.state, {categories: {[this.state.currentTab]: {extraFields: {$move: [indexA, indexB]}}}})
+        )
+    }
 
-  updateName(name)
-  {
-    console.log(this.__proto__)
+    removeField (index)
+    {
+        this.setState(
+            update(this.state, {categories: {[this.state.currentTab]: {extraFields: {$splice: [[index, 1]]}}}})
+        )
+    }
 
-    const categories = this.state.categories
-    const category = categories[this.state.currentTab]
-    category.name = name
-    categories[this.state.currentTab] = category
+    updateField (index, key, value)
+    {
+        this.setState(update(this.state, {
+            categories: {[this.state.currentTab]: {extraFields: {[index]: {[key]: {$set: value}}}}}
+        }))
+    }
 
-    this.setState({
-      categories
-    })
-  }
+    updateName (name)
+    {
+        const categories                  = this.state.categories
+        const category                    = categories[this.state.currentTab]
+        category.name                     = name
+        categories[this.state.currentTab] = category
+
+        this.setState({
+            categories
+        })
+    }
 
 
-  stopEditing()
-  {
-    this.setState({
-      editingCategory: false,
-      categories: this.filterEmptyCategories(this.state.categories)
-    })
-  }
+    stopEditing ()
+    {
+        this.setState({
+            editingCategory: false,
+            categories: this.filterEmptyCategories(this.state.categories)
+        })
+    }
 
-  filterEmptyCategories(categories)
-  {
-    categories = categories.filter(c => c.name != '')
-    if (categories.length == 0)
-      categories.push(new Category())
+    filterEmptyCategories (categories)
+    {
+        categories = categories.filter(c => c.name != '')
+        if (categories.length == 0)
+            categories.push(new Category())
 
-    return categories
-  }
+        return categories
+    }
 
-  render()
-  {
-    return (
-      <div id="admin">
-        <CategoryList
-          editingCategory={this.state.editingCategory}
-          categories={this.state.categories}
-          categoryNames={this.state.categoryNames}
-          addCategory={this.addCategory.bind(this)}
-          toggleEditing={this.editCategory.bind(this)}
-          removeCategory={this.removeCategory.bind(this)}
-          currentTab={this.state.currentTab}
-          updateName={this.updateName.bind(this)}
-          stopEditing={this.stopEditing.bind(this)}
-          switchTab={this.switchTab.bind(this)}
-        />
-        <ExtraFields
-          fields={this.state.categories[this.state.currentTab]['extraFields']}
-          addField={this.addField.bind(this)}
-          stopEditing={this.stopEditing.bind(this)}
-          updateField={this.updateField.bind(this)}
-          moveField={this.moveField.bind(this)}
-          removeField={this.removeField.bind(this)}
-          save={this.save.bind(this)}
-        />
-      </div>
-    )
-  }
+    render ()
+    {
+        return (
+            <div id="admin">
+                <CategoryList
+                    editingCategory={this.state.editingCategory}
+                    categories={this.state.categories}
+                    categoryNames={this.state.categoryNames}
+                    addCategory={this.addCategory.bind(this)}
+                    toggleEditing={this.editCategory.bind(this)}
+                    removeCategory={this.removeCategory.bind(this)}
+                    currentTab={this.state.currentTab}
+                    updateName={this.updateName.bind(this)}
+                    stopEditing={this.stopEditing.bind(this)}
+                    switchTab={this.switchTab.bind(this)}
+                />
+                <ExtraFields
+                    fields={this.state.categories[this.state.currentTab]['extraFields']}
+                    addField={this.addField.bind(this)}
+                    stopEditing={this.stopEditing.bind(this)}
+                    updateField={this.updateField.bind(this)}
+                    moveField={this.moveField.bind(this)}
+                    removeField={this.removeField.bind(this)}
+                    save={this.save.bind(this)}
+                    saving={this.state.saving}
+                />
+            </div>
+        )
+    }
 }
