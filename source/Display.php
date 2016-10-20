@@ -1,7 +1,7 @@
 <?php namespace CheckoutFieldEditor;
 
 /**
- * Class Display
+ * Shows the extra fields on the order confirmation page and emails.
  */
 class Display
 {
