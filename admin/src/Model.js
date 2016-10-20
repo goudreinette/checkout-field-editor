@@ -1,4 +1,4 @@
-export function Category(name)
+export function Category()
 {
   this.name = ''
   this.extraFields = []

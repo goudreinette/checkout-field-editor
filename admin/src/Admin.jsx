@@ -22,7 +22,7 @@ export default class Admin extends Component
     this.state = {
       currentTab: 0,
       editingCategory: false,
-      categories: window.categories.length ? window.categories : initialCategories,
+      categories: window.categories || initialCategories,
       categoryNames: window.categoryNames || []
     }
   }
@@ -132,8 +132,11 @@ export default class Admin extends Component
 
   filterEmptyCategories(categories)
   {
-    console.log(categories)
-    return categories.filter(c => c.name != '')
+    categories = categories.filter(c => c.name != '')
+    if (categories.length == 0)
+      categories.push(new Category())
+
+    return categories
   }
 
   render()
@@ -153,7 +156,7 @@ export default class Admin extends Component
           switchTab={this.switchTab.bind(this)}
         />
         <ExtraFields
-          fields={this.state.categories.length ? this.state.categories[this.state.currentTab].extraFields : []}
+          fields={this.state.categories[this.state.currentTab]['extraFields']}
           addField={this.addField.bind(this)}
           stopEditing={this.stopEditing.bind(this)}
           updateField={this.updateField.bind(this)}

@@ -8,8 +8,7 @@ export default props => (
         className={`category ${props.active ? 'active' : ''} ${props.categoryNames.includes(props.name) ? 'exists' : ''}`}
         onClick={_ => props.active ? props.toggleEditing(props.i) : props.switchTab(props.i)
         }>
-        {props.name}
-
+        <p>{props.name}</p>
         <button className="remove" onClick={e => props.removeCategory(e, props.i)} >
             <InlineSVG src={require('../public/remove.svg')} />
         </button>
