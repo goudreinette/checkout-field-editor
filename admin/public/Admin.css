@@ -57,6 +57,10 @@ h1 {
     margin: auto;
 }
 
+#save * {
+    visibility: visible;
+}
+
 #save i {
     width: 25px;
     height: 25px;

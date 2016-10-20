@@ -10,7 +10,7 @@ export default props =>
             props.saving
                 ?
                 <div id="save">
-                    <Spinner spinnerName="wave"/>
+                    <Spinner spinnerName="wave" overrideSpinnerClassName="saving"/>
                 </div>
 
                 :

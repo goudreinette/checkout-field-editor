@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/Admin.jsx" afterPath="$PROJECT_DIR$/admin/src/Admin.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/Admin.css" afterPath="$PROJECT_DIR$/admin/public/Admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" afterPath="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,13 +29,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Admin.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
+      <file leaf-file-name="ExtraFieldsHeader.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,9 +58,9 @@
         <option value="$PROJECT_DIR$/source/Utils.php" />
         <option value="$PROJECT_DIR$/source/Display.php" />
         <option value="$PROJECT_DIR$/admin/src/ExtraFields.jsx" />
-        <option value="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" />
-        <option value="$PROJECT_DIR$/admin/public/Admin.css" />
         <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
+        <option value="$PROJECT_DIR$/admin/public/Admin.css" />
+        <option value="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" />
       </list>
     </option>
   </component>
@@ -342,7 +343,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -381,7 +382,8 @@
     <MESSAGE value="todo" />
     <MESSAGE value="Thankyou display" />
     <MESSAGE value="Save indicator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save indicator" />
+    <MESSAGE value="Fixed duration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed duration" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -415,18 +417,19 @@
         <state relative-caret-position="1377">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <marker date="1476955669212" expanded="true" signature="11:45" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="50:96" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="104:182" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="192:227" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="236:301" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="323:367" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="391:429" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="457:509" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="517:735" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="749:805" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="815:853" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="894:946" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="11:45" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="50:96" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="104:182" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="192:227" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="236:301" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="323:367" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="391:429" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="457:509" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="517:735" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="749:805" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="815:843" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="853:891" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="932:984" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -642,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/src/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2094">
-          <caret line="147" column="2" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/public/ExtraFields.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -663,40 +659,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx">
+    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="216">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <marker date="1476955813029" expanded="true" signature="7:332" ph="..." />
+            <marker date="1476955813029" expanded="true" signature="420:454" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="502:4768" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="527:791" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="566:785" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="809:1063" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="956:1056" ph="{&quot;action&quot;: 'saveCheckoutFields'...}" />
+            <marker date="1476955813029" expanded="true" signature="1091:1168" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="1193:1476" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="1277:1459" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="1507:1641" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="1558:1634" ph="{&quot;currentTab&quot;: index...}" />
+            <marker date="1476955813029" expanded="true" signature="1677:1987" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="1788:1970" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="2009:2160" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="2197:2351" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="2381:2533" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="2575:2737" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="2618:2729" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="2765:3077" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="3036:3070" ph="{&quot;categories&quot;: categories...}" />
+            <marker date="1476955813029" expanded="true" signature="3103:3255" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="3127:3248" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="3300:3472" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="3492:4766" ph="{...}" />
+            <marker date="1476955813029" expanded="true" signature="3523:4750" ph="&lt;div/&gt;" />
+            <marker date="1476955813029" expanded="true" signature="3556:4199" ph="&lt;CategoryList/&gt;" />
+            <marker date="1476955813029" expanded="true" signature="4216:4731" ph="&lt;ExtraFields/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/CategoryListHeader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1476782134675" expanded="true" signature="7:117" ph="..." />
+            <marker date="1476782134675" expanded="true" signature="144:297" ph="&lt;header/&gt;" />
+            <marker date="1476782134675" expanded="true" signature="177:287" ph="&lt;button/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1782">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1472055397000" expanded="true" signature="2808:8995" ph="{...}" />
+            <marker date="1472055397000" expanded="true" signature="2877:3073" ph="{...}" />
+            <marker date="1472055397000" expanded="true" signature="3099:8972" ph="[...]" />
+            <marker date="1472055397000" expanded="true" signature="3100:8971" ph="{&quot;key&quot;: 'render'...}" />
+            <marker date="1472055397000" expanded="true" signature="3150:8967" ph="{...}" />
+            <marker date="1472055397000" expanded="true" signature="3221:3331" ph="{...}" />
+            <marker date="1472055397000" expanded="true" signature="3775:8937" ph="{...}" />
+            <marker date="1472055397000" expanded="true" signature="9045:9260" ph="{&quot;spinnerName&quot;: _react2.default.PropTypes.string.isRequired...}" />
+            <marker date="1472055397000" expanded="true" signature="9286:9370" ph="{&quot;spinnerName&quot;: 'three-bounce'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/src/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+          <folding>
+            <marker date="1471832107000" expanded="false" signature="91:496" ph="..." />
+            <marker date="1471832107000" expanded="true" signature="536:4347" ph="{...}" />
+            <marker date="1471832107000" expanded="true" signature="560:617" ph="{...}" />
+            <marker date="1471832107000" expanded="true" signature="630:4344" ph="{...}" />
+            <marker date="1471832107000" expanded="true" signature="655:898" ph="{...}" />
+            <marker date="1471832107000" expanded="true" signature="1128:4318" ph="{...}" />
+            <marker date="1471832107000" expanded="true" signature="1190:1356" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="1444:1544" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="1622:1875" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="1964:2114" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="2193:2284" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="2370:2563" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="2419:2546" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="2643:3283" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="3366:3767" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="3850:4009" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="3899:3992" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="4110:4301" ph="&lt;div/&gt;" />
+            <marker date="1471832107000" expanded="true" signature="4369:4545" ph="{&quot;spinnerName&quot;: React.PropTypes.string.isRequired...}" />
+            <marker date="1471832107000" expanded="true" signature="4571:4656" ph="{&quot;spinnerName&quot;: 'three-bounce'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/public/Admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="483">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <marker date="1476955669212" expanded="true" signature="11:45" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="50:96" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="104:182" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="192:227" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="236:301" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="323:367" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="391:429" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="457:509" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="517:735" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="749:805" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="815:853" ph="{...}" />
-            <marker date="1476955669212" expanded="true" signature="894:946" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="11:45" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="50:96" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="104:182" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="192:227" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="236:301" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="323:367" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="391:429" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="457:509" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="517:735" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="749:805" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="815:843" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="853:891" ph="{...}" />
+            <marker date="1476956154339" expanded="true" signature="932:984" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
+    <entry file="file://$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
