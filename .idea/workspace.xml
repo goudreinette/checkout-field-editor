@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/package.json" afterPath="$PROJECT_DIR$/admin/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/Admin.css" afterPath="$PROJECT_DIR$/admin/public/Admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/Admin.jsx" afterPath="$PROJECT_DIR$/admin/src/Admin.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/ExtraFields.jsx" afterPath="$PROJECT_DIR$/admin/src/ExtraFields.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" afterPath="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,12 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Admin.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/public/Admin.css">
+      <file leaf-file-name="Admin.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,8 +58,8 @@
         <option value="$PROJECT_DIR$/source/Display.php" />
         <option value="$PROJECT_DIR$/admin/src/ExtraFields.jsx" />
         <option value="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" />
-        <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
         <option value="$PROJECT_DIR$/admin/public/Admin.css" />
+        <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
       </list>
     </option>
   </component>
@@ -346,14 +342,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24479167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -384,7 +380,8 @@
     <MESSAGE value="Printing finished" />
     <MESSAGE value="todo" />
     <MESSAGE value="Thankyou display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thankyou display" />
+    <MESSAGE value="Save indicator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save indicator" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -417,7 +414,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1476955669212" expanded="true" signature="11:45" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="50:96" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="104:182" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="192:227" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="236:301" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="323:367" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="391:429" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="457:509" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="517:735" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="749:805" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="815:853" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="894:946" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,18 +670,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
+    <entry file="file://$PROJECT_DIR$/admin/public/Admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+        <state relative-caret-position="1053">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1476955669212" expanded="true" signature="11:45" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="50:96" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="104:182" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="192:227" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="236:301" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="323:367" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="391:429" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="457:509" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="517:735" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="749:805" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="815:853" ph="{...}" />
+            <marker date="1476955669212" expanded="true" signature="894:946" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/public/Admin.css">
+    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

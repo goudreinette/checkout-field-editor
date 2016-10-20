@@ -30,14 +30,12 @@ export default class Admin extends Component {
     save ()
     {
         this.setState({saving: true})
+        setTimeout(() => this.setState({saving: false}), 2200)
 
-        if (!window.jQuery)
-            setTimeout(() => this.setState({saving: false}), 2200)
-        else
-            window.jQuery.post(window.ajaxurl, {
-                action: 'saveCheckoutFields',
-                categories: this.state.categories,
-            }, () => this.setState({saving: false}))
+        window.jQuery.post(window.ajaxurl, {
+            action: 'saveCheckoutFields',
+            categories: this.state.categories,
+        })
     }
 
     switchTab (index)
