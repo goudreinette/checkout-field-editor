@@ -5,6 +5,7 @@ import logo from '../public/logo.svg'
 import '../public/Admin.css'
 import CategoryList from './CategoryList'
 import ExtraFields from './ExtraFields'
+import SelectEditor from './SelectEditor'
 import {Field, Category, initialCategories, categoryNames} from './Model'
 
 window.initialCategories = initialCategories

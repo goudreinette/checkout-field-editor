@@ -13,7 +13,7 @@ h1 {
     height: 100%;
 }
 
-#root * {
+#root h5, #root p {
     font-size: 14px !important;
 }
 

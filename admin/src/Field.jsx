@@ -2,7 +2,6 @@ import React from 'react'
 import InlineSVG from 'svg-inline-react'
 import { title, snakeCase } from 'change-case'
 import FieldToggle from './FieldToggle'
-import removeIcon from '../public/remove.svg'
 
 export default function Field({name, type, required, showOnEmails, updateField, removeField, i})
 {
