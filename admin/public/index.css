@@ -12,8 +12,8 @@ body {
 }
 
 #root, #admin {
-    height: 100%;
     width: 100%;
+    height: 100vh;
 }
 
 #wp-content {
@@ -69,7 +69,7 @@ header .active {
 
 header h5 {
     background: none;
-    margin-left: auto;
+    margin: auto;
     font-weight: normal;
     color: #292929;
 }

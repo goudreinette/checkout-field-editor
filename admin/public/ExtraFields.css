@@ -11,8 +11,25 @@
 }
 
 #extra-fields header h5 {
-    position: relative;
-    left: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+#extra-fields header #save {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#extra-fields header #back {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    bottom: 0;
 }
 
 .field, .option {
