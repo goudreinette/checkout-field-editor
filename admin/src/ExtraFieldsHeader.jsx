@@ -6,6 +6,9 @@ import InlineSVG from 'svg-inline-react'
 export default props =>
     <header>
         <h5>Extra Fields</h5>
+        <button id="back" onClick={props.stopEditingSelect} className={props.editingSelect != null ? 'show' : 'hidden'}>
+            <InlineSVG src={require('../public/back.svg')}/>
+        </button>
         {
             props.saving
                 ?

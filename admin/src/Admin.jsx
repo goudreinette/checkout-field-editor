@@ -23,7 +23,8 @@ export default class Admin extends Component {
             currentTab: 0,
             editingCategory: false,
             categories: window.categories || initialCategories,
-            categoryNames: window.categoryNames || [],
+            categoryNames: window.categoryNames || categoryNames,
+            editingSelect: null, // index
             saving: false
         }
     }
@@ -87,10 +88,10 @@ export default class Admin extends Component {
         )
     }
 
-    moveField (indexA, indexB)
+    moveField (from, to)
     {
         this.setState(
-            update(this.state, {categories: {[this.state.currentTab]: {extraFields: {$move: [indexA, indexB]}}}})
+            update(this.state, {categories: {[this.state.currentTab]: {extraFields: {$move: [from, to]}}}})
         )
     }
 
@@ -138,14 +139,68 @@ export default class Admin extends Component {
         return categories
     }
 
+    addOption ()
+    {
+        this.setState(update(this.state, {
+            categories: {
+                [this.state.currentTab]: {
+                    extraFields: {[this.state.editingSelect]: {options: {$push: [['']]}}}
+                }
+            }
+        }))
+    }
+
+    updateOptionName (index, name)
+    {
+        this.setState(update(this.state, {
+            categories: {
+                [this.state.currentTab]: {extraFields: {[this.state.editingSelect]: {options: {[index]: {$set: name}}}}}
+            }
+        }))
+    }
+
+    removeOption (index)
+    {
+        this.setState(update(this.state, {
+            categories: {
+                [this.state.currentTab]: {extraFields: {[this.state.editingSelect]: {options: {$splice: [[index, 1]]}}}}
+            }
+        }))
+    }
+
+    moveOption (from, to)
+    {
+        this.setState(update(this.state, {
+            categories: {
+                [this.state.currentTab]: {extraFields: {[this.state.editingSelect]: {options: {$move: [from, to]}}}}
+            }
+        }))
+    }
+
+    editSelect (index)
+    {
+        console.log(index)
+        this.setState({
+            editingSelect: index
+        })
+    }
+
+    stopEditingSelect ()
+    {
+        console.log('here')
+        this.setState({
+            editingSelect: null
+        })
+    }
+
     render ()
     {
         return (
             <div id="admin">
                 <CategoryList
-                    editingCategory={this.state.editingCategory}
                     categories={this.state.categories}
                     categoryNames={this.state.categoryNames}
+                    editingCategory={this.state.editingCategory}
                     addCategory={this.addCategory.bind(this)}
                     toggleEditing={this.editCategory.bind(this)}
                     removeCategory={this.removeCategory.bind(this)}
@@ -156,13 +211,20 @@ export default class Admin extends Component {
                 />
                 <ExtraFields
                     fields={this.state.categories[this.state.currentTab]['extraFields']}
+                    editingSelect={this.state.editingSelect}
+                    saving={this.state.saving}
                     addField={this.addField.bind(this)}
                     stopEditing={this.stopEditing.bind(this)}
                     updateField={this.updateField.bind(this)}
                     moveField={this.moveField.bind(this)}
                     removeField={this.removeField.bind(this)}
+                    removeOption={this.removeOption.bind(this)}
+                    updateOptionName={this.updateOptionName.bind(this)}
+                    addOption={this.addOption.bind(this)}
+                    moveOption={this.moveOption.bind(this)}
+                    editSelect={this.editSelect.bind(this)}
+                    stopEditingSelect={this.stopEditingSelect.bind(this)}
                     save={this.save.bind(this)}
-                    saving={this.state.saving}
                 />
             </div>
         )

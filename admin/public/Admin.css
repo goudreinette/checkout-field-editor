@@ -23,14 +23,9 @@ h1 {
     height: 100%;
 }
 
-#category-list #add {
+#category-list #add, #back {
     opacity: 0.2;
     padding: 0px 15px;
-}
-
-#category-list #add i {
-    width: 25px;
-    height: 25px;
 }
 
 #category-list #add:hover {
@@ -39,7 +34,6 @@ h1 {
 }
 
 #save {
-    margin-left: auto;
     background-size: 35%;
     opacity: 0.2;
     padding: 0px;
@@ -49,6 +43,10 @@ h1 {
     align-items: center;
     justify-content: center;
     background: none;
+}
+
+#back {
+    margin-left: auto;
 }
 
 #save > div {
@@ -61,12 +59,13 @@ h1 {
     visibility: visible;
 }
 
-#save i {
+#save i, #back i, #add i {
     width: 25px;
     height: 25px;
 }
 
-#category-list #add:hover, #save:hover {
+#category-list #add:hover, #save:hover, #back:hover {
     opacity: 0.4;
     background-color: #f1f1f1;
 }
+

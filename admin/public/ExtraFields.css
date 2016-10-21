@@ -45,8 +45,13 @@
     width: 200px;
 }
 
-.field button {
+.field button, .field select {
     height: 100%;
+    color: #bbb;
+}
+
+.field button:hover, .field select:hover {
+    color: #666;
 }
 
 .field#add, .option#add {
@@ -88,8 +93,8 @@
 }
 
 .remove i {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
 }
 
 .field:hover .remove {

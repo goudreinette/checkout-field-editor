@@ -1,106 +1,101 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  background-color: white;
-  height: 100%;
+    background-color: white;
+    height: 100%;
 }
 
 body {
-  height: calc(100% - 50px);
+    height: calc(100% - 50px);
 }
 
-
-
 #root, #admin {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 #wp-content {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 #root {
-  margin: 25px;
-  background-color: #eee;
-  width: calc(100% - 50px);
+    margin: 25px;
+    background-color: #eee;
+    width: calc(100% - 50px);
 }
 
 main {
 }
 
+.hidden {
+    opacity: 0 !important;
+}
 
 /**
  * Header
  */
 header {
-  height: 50px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  position: absolute;
-  top: 0;
-  border-bottom: 1px solid #eee;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #eee;
 }
 
 header > * {
-  background-color: #ddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 30px;
-  border-width: 0px 0px 0px 1px;
-  border-style: solid;
-  border-color: #eee;
-  color: grey;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    border: 0px solid #eee;
+    border-left-width: 1px;
+    color: grey;
 }
 
 header > *:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  cursor: default;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
 }
 
 header .active {
-  background-color: #eee;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-header button {
-  margin-left: auto;
+    background-color: #eee;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 header h5 {
-  background: none;
-  margin-left: auto;
-  font-weight: normal;
-  color: #292929;
+    background: none;
+    margin-left: auto;
+    font-weight: normal;
+    color: #292929;
 }
-
 
 /**
  * Input
  */
 
 button, select {
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 
 select {
-  height: 100%;
+    height: 100%;
 }
 
 /*
  * Flex
  */
 
-
 .right {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .middle {
-  margin: auto;
+    margin: auto;
 }
+
