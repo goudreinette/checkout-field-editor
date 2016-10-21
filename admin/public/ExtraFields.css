@@ -122,3 +122,13 @@
     opacity: 1;
     filter: saturate(1);
 }
+
+.edit.hidden {
+    width: 35px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.field .edit.show {
+    opacity: 1 !important;
+}

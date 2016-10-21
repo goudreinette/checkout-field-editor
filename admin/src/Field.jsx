@@ -20,7 +20,7 @@ export default function Field ({name, type, required, showOnEmails, updateField,
                     <option value="checkbox">Checkbox</option>
                     <option value="select">Select</option>
                 </select>
-                <button onClick={_ => editSelect(i)} className={type == 'select' ? 'show' : 'hidden'}>
+                <button onClick={_ => editSelect(i)} className={type == 'select' ? 'edit show' : 'edit hidden'}>
                     edit
                 </button>
             </div>
