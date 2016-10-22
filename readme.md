@@ -12,4 +12,6 @@
 
 
 ![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/screenshot.png)
+
+
 ![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/screenshot_2.png)
