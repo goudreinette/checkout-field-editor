@@ -137,4 +137,23 @@ class Utils
 
         return $result;
     }
+
+    static function selectShouldShow($extraFieldsByCategory, $order_meta)
+    {
+        $result = [];
+
+        foreach ($order_meta as $categoryName => $fields) {
+            $result[$categoryName] = [];
+            foreach ($fields as $fieldName => $fieldValue) {
+                $originalCategory = Utils::findBy('name', $categoryName, $extraFieldsByCategory);
+                $originalField    = Utils::findBy('name', $fieldName, $originalCategory['extraFields']);
+
+                if ($originalField['showOnEmails']) {
+                    $result[$categoryName][$fieldName] = $fieldValue;
+                }
+            }
+        }
+
+        return $result;
+    }
 }

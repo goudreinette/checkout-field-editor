@@ -15,8 +15,9 @@ class Display
     {
         $extraFieldsByCategory = OptionMeta::getFields();
         $order_meta            = get_post_meta($order->id, OptionMeta::$meta_key, true);
+        $order_meta            = Utils::selectShouldShow($extraFieldsByCategory, $order_meta);
         $notEmpty              = Utils::rejectWithEmptyChildren($order_meta);
-        
+
         foreach ($notEmpty as $categoryName => $category) {
             $this->renderCategory($categoryName, $category);
         }

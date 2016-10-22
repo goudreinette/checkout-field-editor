@@ -8,12 +8,12 @@ class UtilsTest extends TestCase
     {
         $extraFieldsByCategory = [
             [
-                'name' => 'T-shirts',
+                'name'        => 'T-shirts',
                 'extraFields' => [
                     [
-                        'name' => 'order_notes',
-                        'type' => 'text',
-                        'required' => 'false',
+                        'name'         => 'order_notes',
+                        'type'         => 'text',
+                        'required'     => 'false',
                         'showOnEmails' => 'true'
                     ]
                 ]
@@ -22,7 +22,7 @@ class UtilsTest extends TestCase
                 'name' => 'Women'
             ],
             [
-                'name' => 'Men',
+                'name'        => 'Men',
                 'extraFields' => null
             ]
         ];
@@ -37,12 +37,12 @@ class UtilsTest extends TestCase
     {
         $shoes = [
             [
-                'type' => 'sneakers',
+                'type'  => 'sneakers',
                 'color' => 'red'
             ],
 
             [
-                'type' => 'boatshoes',
+                'type'  => 'boatshoes',
                 'color' => 'brown'
             ]
         ];
@@ -55,16 +55,51 @@ class UtilsTest extends TestCase
         $this->assertNull($result);
     }
 
-    function testGetApplicableCategoryNamesForCart()
+    function testSelectShouldShow()
     {
-        $cartContents = [
-            123456 => [
-                
+        $extraFieldsByCategory = [
+            [
+                'name'        => 'Tickets',
+                'extraFields' => [
+                    [
+                        'name'         => 'Order Notes',
+                        'showOnEmails' => true
+                    ]
+                ]
             ],
-
-            234567 => [
-
+            [
+                'name'        => 'T-shirts',
+                'extraFields' => [
+                    [
+                        'name'         => 'Another Key',
+                        'showOnEmails' => false
+                    ]
+                ]
             ]
         ];
+
+        $order_meta = [
+            'Tickets' => [
+                'Order Notes' => 'Some Value'
+            ],
+
+            'T-shirts' => [
+                'Another Key' => 'Another Value'
+            ]
+        ];
+
+        $expected = [
+            'Tickets' => [
+                'Order Notes' => 'Some Value'
+            ],
+
+            'T-shirts' => [
+    
+            ]
+        ];
+
+        $actual = Utils::selectShouldShow($extraFieldsByCategory, $order_meta);
+
+        $this->assertEquals($expected, $actual);
     }
 }

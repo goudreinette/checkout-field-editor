@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/AdminTest.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Display.php" afterPath="$PROJECT_DIR$/source/Display.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Utils.php" afterPath="$PROJECT_DIR$/source/Utils.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/UtilsTest.php" afterPath="$PROJECT_DIR$/test/UtilsTest.php" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,12 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Utils.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/Utils.php">
+      <file leaf-file-name="Display.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Display.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="585">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <marker date="1477130444365" expanded="true" signature="912:927" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +77,6 @@
         <option value="$PROJECT_DIR$/admin/src/Field.jsx" />
         <option value="$PROJECT_DIR$/admin/public/index.css" />
         <option value="$PROJECT_DIR$/admin/public/ExtraFields.css" />
-        <option value="$PROJECT_DIR$/source/Display.php" />
         <option value="$PROJECT_DIR$/source/Admin.php" />
         <option value="$PROJECT_DIR$/test.clj" />
         <option value="$PROJECT_DIR$/admin/src/ExtraFields.jsx" />
@@ -80,6 +84,9 @@
         <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
         <option value="$PROJECT_DIR$/source/Checkout.php" />
         <option value="$PROJECT_DIR$/source/Utils.php" />
+        <option value="$PROJECT_DIR$/test/AdminTest.php" />
+        <option value="$PROJECT_DIR$/test/UtilsTest.php" />
+        <option value="$PROJECT_DIR$/source/Display.php" />
       </list>
     </option>
   </component>
@@ -170,6 +177,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkout-field-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkout-field-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -220,6 +241,53 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -243,6 +311,160 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -255,6 +477,27 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -328,6 +571,12 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -342,6 +591,34 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
@@ -372,6 +649,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -386,7 +669,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477126583096</updated>
-      <workItem from="1477126584212" duration="2379000" />
+      <workItem from="1477126584212" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug when removing last category">
       <created>1477127315064</created>
@@ -416,11 +699,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477128609391</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Better autocompletion">
+      <created>1477128978879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1477128978879</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2379000" />
+    <option name="totallyTimeSpent" value="3902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="3072" height="3414" extended-state="4" />
@@ -444,7 +734,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39890876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39890876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -484,7 +774,8 @@
     <MESSAGE value="Select name now editable from SelectEditor" />
     <MESSAGE value="Select seems to work." />
     <MESSAGE value="Select value correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select value correction" />
+    <MESSAGE value="Better autocompletion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better autocompletion" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -503,17 +794,17 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/source/Display.php</url>
-          <line>26</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/source/Utils.php</url>
           <line>112</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/source/Display.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -522,20 +813,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/public/ExtraFields.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4644">
-          <caret line="172" column="42" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/ExtraFields.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -569,15 +846,7 @@
         <state relative-caret-position="810">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
-            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
-            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
+            <marker date="1477130444365" expanded="true" signature="912:927" ph="..." />
           </folding>
         </state>
       </provider>
@@ -587,15 +856,7 @@
         <state relative-caret-position="324">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
-            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
+            <marker date="1477130444365" expanded="true" signature="912:927" ph="..." />
           </folding>
         </state>
       </provider>
@@ -605,15 +866,7 @@
         <state relative-caret-position="459">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
-            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
+            <marker date="1477130444365" expanded="true" signature="912:927" ph="..." />
           </folding>
         </state>
       </provider>
@@ -815,24 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Display.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
-            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
-            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/ExtraFields.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -935,31 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3208">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <marker date="1477128580895" expanded="true" signature="41:171" ph=" Responsile for displaying the extra checkout fields. ..." />
-            <marker date="1477128580895" expanded="true" signature="188:3460" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="217:470" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="506:1159" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="762:1078" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="970:1068" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="1185:1871" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="1626:1864" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="1691:1854" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="1915:2532" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="2275:2525" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="2572:2775" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="2696:2745" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="2809:3458" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="2847:3450" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="2895:3449" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1027,11 +1237,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/AdminTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/Utils.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="3070">
+          <caret line="156" column="23" selection-start-line="156" selection-start-column="23" selection-end-line="156" selection-end-column="23" />
+          <folding>
+            <marker date="1477130264452" expanded="true" signature="50:4436" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="60:121" ph=" Find the item where item[key] is value in array ..." />
+            <marker date="1477130264452" expanded="true" signature="170:295" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="212:288" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="304:364" ph=" Get all item's who's key matches one of values ..." />
+            <marker date="1477130264452" expanded="true" signature="420:635" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="459:584" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="497:562" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="687:862" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="906:1256" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="945:980" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="1048:1224" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="1084:1153" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="1161:1214" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="1328:1774" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="1443:1725" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="1820:2294" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="1872:2258" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="2029:2248" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="2303:2376" ph=" Get all defined product categories. ..." />
+            <marker date="1477130264452" expanded="true" signature="2421:3198" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="2748:3044" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="3207:3270" ph=" Filter out items whose children are empty strings ..." />
+            <marker date="1477130264452" expanded="true" signature="3324:3581" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="3359:3573" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="3397:3572" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="3449:3558" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="3625:3767" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="3690:3735" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="3842:4434" ph="{...}" />
+            <marker date="1477130264452" expanded="true" signature="3931:4402" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="4033:4392" ph="..." />
+            <marker date="1477130264452" expanded="true" signature="4291:4378" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UtilsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+          <folding>
+            <marker date="1477130306545" expanded="true" signature="103:2831" ph="{...}" />
+            <marker date="1477130306545" expanded="true" signature="136:1081" ph="{...}" />
+            <marker date="1477130306545" expanded="true" signature="177:733" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="191:553" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="271:539" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="293:521" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="569:616" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="632:723" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1108:1668" ph="{...}" />
+            <marker date="1477130306545" expanded="true" signature="1133:1347" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1147:1232" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1249:1337" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1705:2829" ph="{...}" />
+            <marker date="1477130306545" expanded="true" signature="1746:2304" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1760:2018" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1839:2004" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="1861:1986" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2034:2294" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2114:2280" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2136:2262" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2331:2520" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2358:2417" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2448:2510" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2545:2690" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2572:2631" ph="..." />
+            <marker date="1477130306545" expanded="true" signature="2662:2680" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1477128580895" expanded="true" signature="41:171" ph=" Responsile for displaying the extra checkout fields. ..." />
+            <marker date="1477128580895" expanded="true" signature="188:3460" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="217:470" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="506:1159" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="762:1078" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="970:1068" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="1185:1871" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="1626:1864" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="1691:1854" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="1915:2532" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="2275:2525" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="2572:2775" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="2696:2745" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="2809:3458" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="2847:3450" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="2895:3449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1477130444365" expanded="true" signature="912:927" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
