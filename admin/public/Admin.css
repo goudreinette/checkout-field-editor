@@ -1,3 +1,7 @@
+#wpcontent {
+    background-color: #f1f1f1;
+}
+
 h1 {
     margin: 50px 30px;
     color: #444444;
@@ -6,8 +10,61 @@ h1 {
 #root {
     border: 1px solid lightgrey;
     height: calc(83vh);
+    height: 100%;
 }
 
-#wpcontent {
+#root h5, #root p {
+    font-size: 14px !important;
+}
+
+#admin {
+    display: flex;
+    flex-direction: row;
+}
+
+#category-list #add, #back {
+    opacity: 0.2;
+    padding: 0px 15px;
+}
+
+#category-list #add:hover {
+    opacity: 0.4;
     background-color: #f1f1f1;
 }
+
+#save {
+    background-size: 35%;
+    opacity: 0.2;
+    padding: 0px;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+#back {
+    margin-left: auto;
+}
+
+#save > div {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#save * {
+    visibility: visible;
+}
+
+#save i, #back i, #add i {
+    width: 25px;
+    height: 25px;
+}
+
+#category-list #add:hover, #save:hover, #back:hover {
+    opacity: 0.4;
+    background-color: #f1f1f1;
+}
+

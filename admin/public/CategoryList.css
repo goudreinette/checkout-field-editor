@@ -1,0 +1,88 @@
+/**
+ * Category List
+ */
+#category-list {
+    width: 250px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#category-list header {
+    border-right: 1px solid #eee;
+}
+
+#category-list-wrapper {
+    height: calc(100% - 50px);
+    margin-top: 50px;
+}
+
+/**
+ * Category
+ */
+.category {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 3px;
+    border: none;
+    border-left: 2px solid white;
+    text-align: left;
+}
+
+div.category {
+    transition: all 0.2s;
+}
+
+.category:not(:hover) .remove {
+    opacity: 0.4;
+}
+
+.category:hover {
+    border-left: 2px solid #eee;
+    background-color: #fafafa
+}
+
+.category.active {
+    border: none !important;
+    border-left: 2px solid !important;
+    margin: 0 !important;
+}
+
+.category.exists {
+    font-weight: bold;
+}
+
+/**
+ * Suggestions
+ */
+#suggestions {
+    background-color: white;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    border-left: 2px solid #eee;
+}
+
+.suggestion {
+    height: 30px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+
+.suggestion.active {
+    font-weight: bold;
+}

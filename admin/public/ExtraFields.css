@@ -1,16 +1,43 @@
 #extra-fields {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: calc(100% - 250px);
 }
 
+#extra-fields-wrapper {
+    padding: 75px 25px 25px 25px;
+    height: 100%;
+}
 
-.field {
-  height: 50px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+#extra-fields header h5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+#extra-fields header #save {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#extra-fields header #back {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    bottom: 0;
+}
+
+.field, .option {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .field > *, .field > .right > *, .field .middle > * {
@@ -18,84 +45,90 @@
     outline: none;
 }
 
-.field.sortable-ghost {
-  border: 1px dashed deepskyblue;
-  opacity: 0.5;
+.sortable-ghost {
+    border: 1px dashed deepskyblue;
+    opacity: 0.5;
 }
 
-.field.sortable-ghost * {
-  opacity: 0;
+.sortable-ghost * {
+    opacity: 0;
 }
 
-
-.field input {
-  height: 100%;
-  border: none;
-  text-align: left;
-  text-indent: 20px;
-  width: 200px;
+.field input, .option input {
+    height: 100%;
+    border: none;
+    text-align: left;
+    text-indent: 20px;
+    width: 200px;
 }
 
-.field button {
-  height: 100%;
+.field button, .field select {
+    height: 100%;
+    color: #bbb;
 }
 
-.field#add {
-  background-color: #ddd;
-  opacity: 0.5;
-  border: 1px dashed lightgrey;
+.field button:hover, .field select:hover {
+    color: #666;
 }
 
-.field#add:hover {
-  opacity: 1;
+.field#add, .option#add {
+    background-color: #ddd;
+    opacity: 0.5;
+    border: 1px dashed lightgrey;
 }
 
-
+.field#add:hover, .option#add:hover {
+    opacity: 1;
+}
 
 .right button {
-  color: #bbb;
+    color: #bbb;
 }
 
 .middle select {
-  color: grey;
+    color: grey;
 }
-
 
 .showOnEmails.enabled {
-  color: #bb2929 !important
+    color: #bb2929 !important
 }
-
 
 .required.enabled {
-  color: #bb2929 !important
+    color: #bb2929 !important
 }
 
+.remove {
+    width: 50px;
+    height: 50px;
+    background-size: 30%;
+    filter: saturate(0);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.field .remove {
-  /*background-image: url('./remove.svg');*/
-  width: 50px;
-  height: 50px;
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: saturate(0);
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
+}
 
-.field .remove i {
-  width: 16px;
-  height: 16px;
+.remove i {
+    width: 12px;
+    height: 12px;
 }
 
 .field:hover .remove {
-  opacity: 0.5;
-} 
+    opacity: 0.5;
+}
 
+.remove:hover {
+    opacity: 1;
+    filter: saturate(1);
+}
 
-.field .remove:hover {
-  opacity: 1;
-  filter: saturate(1);
+.edit.hidden {
+    width: 35px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.field .edit.show {
+    opacity: 1 !important;
 }
