@@ -632,7 +632,7 @@
       <updated>1477126583096</updated>
       <workItem from="1477126584212" duration="4193000" />
       <workItem from="1477130801005" duration="179000" />
-      <workItem from="1477131001382" duration="136000" />
+      <workItem from="1477131001382" duration="216000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug when removing last category">
       <created>1477127315064</created>
@@ -683,11 +683,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477131036728</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Improved readme">
+      <created>1477131144876</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1477131144876</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4508000" />
+    <option name="totallyTimeSpent" value="4588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="3052" height="3414" extended-state="4" />
