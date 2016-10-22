@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/Admin.jsx" afterPath="$PROJECT_DIR$/admin/src/Admin.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Checkout.php" afterPath="$PROJECT_DIR$/source/Checkout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Utils.php" afterPath="$PROJECT_DIR$/source/Utils.php" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Checkout.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/Checkout.php">
+      <file leaf-file-name="Utils.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Utils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1574">
-              <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+            <state relative-caret-position="688">
+              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -63,7 +62,6 @@
         <option value="$PROJECT_DIR$/source/OptionMeta.php" />
         <option value="$PROJECT_DIR$/source/Emails.php" />
         <option value="$PROJECT_DIR$/checkout-field-editor.php" />
-        <option value="$PROJECT_DIR$/source/Utils.php" />
         <option value="$PROJECT_DIR$/admin/src/SelectEditor.jsx.js" />
         <option value="$PROJECT_DIR$/admin/src/Model.js" />
         <option value="$PROJECT_DIR$/admin/src/Option.jsx" />
@@ -81,6 +79,7 @@
         <option value="$PROJECT_DIR$/admin/src/SelectEditor.jsx" />
         <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
         <option value="$PROJECT_DIR$/source/Checkout.php" />
+        <option value="$PROJECT_DIR$/source/Utils.php" />
       </list>
     </option>
   </component>
@@ -387,7 +386,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477126583096</updated>
-      <workItem from="1477126584212" duration="1797000" />
+      <workItem from="1477126584212" duration="2379000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug when removing last category">
       <created>1477127315064</created>
@@ -403,11 +402,25 @@
       <option name="project" value="LOCAL" />
       <updated>1477127825619</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Select seems to work.">
+      <created>1477128416618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1477128416618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Select value correction">
+      <created>1477128609391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1477128609391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1797000" />
+    <option name="totallyTimeSpent" value="2379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="3072" height="3414" extended-state="4" />
@@ -431,7 +444,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39890876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -469,7 +482,9 @@
     <MESSAGE value="Button width" />
     <MESSAGE value="Fixed bug when removing last category" />
     <MESSAGE value="Select name now editable from SelectEditor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select name now editable from SelectEditor" />
+    <MESSAGE value="Select seems to work." />
+    <MESSAGE value="Select value correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select value correction" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -492,8 +507,13 @@
           <line>26</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/source/Utils.php</url>
+          <line>112</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -670,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="90" column="7" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/CategoryListHeader.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -776,18 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <marker date="1477126542192" expanded="true" signature="54:323" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="119:193" ph="{...}" />
-            <marker date="1477126542192" expanded="true" signature="235:321" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -936,8 +937,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1574">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+        <state relative-caret-position="3208">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <marker date="1477128580895" expanded="true" signature="41:171" ph=" Responsile for displaying the extra checkout fields. ..." />
+            <marker date="1477128580895" expanded="true" signature="188:3460" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="217:470" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="506:1159" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="762:1078" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="970:1068" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="1185:1871" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="1626:1864" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="1691:1854" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="1915:2532" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="2275:2525" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="2572:2775" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="2696:2745" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="2809:3458" ph="{...}" />
+            <marker date="1477128580895" expanded="true" signature="2847:3450" ph="..." />
+            <marker date="1477128580895" expanded="true" signature="2895:3449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <marker date="1477126542192" expanded="true" signature="54:323" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="119:193" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="235:321" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../wordpress/wp-includes/functions.wp-scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="197" column="48" selection-start-line="197" selection-start-column="48" selection-end-line="197" selection-end-column="48" />
+          <folding>
+            <marker date="1467808829000" expanded="false" signature="9:122" ph=" Dependencies API: Scripts functions ..." />
+            <marker date="1467808829000" expanded="true" signature="129:283" ph=" Initialize $wp_scripts if it has not been set. ..." />
+            <marker date="1467808829000" expanded="true" signature="309:439" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="380:416" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="445:594" ph=" Helper function to output a _doing_it_wrong message when applicable. ..." />
+            <marker date="1467808829000" expanded="true" signature="653:972" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="684:696" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="716:969" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="736:958" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="978:1728" ph=" Prints scripts in document head that are in the $handles queue. ..." />
+            <marker date="1467808829000" expanded="true" signature="1778:2232" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="1783:1867" ph=" Fires before scripts in the $handles queue are printed. ..." />
+            <marker date="1467808829000" expanded="true" signature="1929:1966" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="2091:2185" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="2113:2182" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="2238:2982" ph=" Adds extra code to a registered script. ..." />
+            <marker date="1467808829000" expanded="true" signature="3055:3550" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="3157:3477" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="3176:3392" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="3199:3381" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="3314:3318" ph="&amp;lt;" />
+            <marker date="1467808829000" expanded="true" signature="3324:3328" ph="&amp;gt;" />
+            <marker date="1467808829000" expanded="true" signature="3556:4843" ph=" Register a new script. ..." />
+            <marker date="1467808829000" expanded="true" signature="4943:5182" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="5108:5158" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="5188:6107" ph=" Localize a script. ..." />
+            <marker date="1467808829000" expanded="true" signature="6171:6378" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="6242:6312" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="6384:6673" ph=" Remove a registered script. ..." />
+            <marker date="1467808829000" expanded="true" signature="6718:8021" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="6775:6922" ph=" Do not allow accidental or negligent de-registering of critical scripts in the admin. ..." />
+            <marker date="1467808829000" expanded="true" signature="7129:7984" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="7144:7664" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="7703:7981" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="7726:7910" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="8027:9208" ph=" Enqueue a script. ..." />
+            <marker date="1467808829000" expanded="true" signature="9315:9660" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="9427:9623" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="9482:9540" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="9564:9620" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="9666:9827" ph=" Remove a previously enqueued script. ..." />
+            <marker date="1467808829000" expanded="true" signature="9869:9957" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="9963:10374" ph=" Check whether a script has been added to the queue. ..." />
+            <marker date="1467808829000" expanded="true" signature="10431:10538" ph="..." />
+            <marker date="1467808829000" expanded="true" signature="10544:11028" ph=" Add metadata to a script. ..." />
+            <marker date="1467808829000" expanded="true" signature="11084:11142" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding />
         </state>
       </provider>

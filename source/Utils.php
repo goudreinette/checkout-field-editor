@@ -89,13 +89,32 @@ class Utils
      */
     static function getProductCategories()
     {
-        $all_categories = get_terms(['taxonomy' => 'product_cat']);
 
-        return array_column($all_categories, 'name');
+        $taxonomy     = 'product_cat';
+        $orderby      = 'name';
+        $show_count   = 0;      // 1 for yes, 0 for no
+        $pad_counts   = 0;      // 1 for yes, 0 for no
+        $hierarchical = 1;      // 1 for yes, 0 for no
+        $title        = '';
+        $empty        = 0;
+
+        $args           = [
+            'taxonomy'     => $taxonomy,
+            'orderby'      => $orderby,
+            'show_count'   => $show_count,
+            'pad_counts'   => $pad_counts,
+            'hierarchical' => $hierarchical,
+            'title_li'     => $title,
+            'hide_empty'   => $empty
+        ];
+        $all_categories = get_categories($args);
+        $categoryNames  = array_column($all_categories, 'name');
+
+        return $categoryNames;
     }
 
     /**
-     * Filter out
+     * Filter out items whose children are empty strings
      */
     static function rejectWithEmptyChildren($items)
     {
