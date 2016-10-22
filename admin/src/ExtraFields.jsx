@@ -16,12 +16,14 @@ export default function ExtraFields ({
             <ExtraFieldsHeader save={save} editingSelect={editingSelect} saving={saving}
                                stopEditingSelect={stopEditingSelect}/>
             <SelectEditor
+                editingSelect={editingSelect}
                 show={editingSelect != null}
                 field={editingSelect != null ? fields[editingSelect] : {}}
                 addOption={addOption}
                 updateOptionName={updateOptionName}
                 removeOption={removeOption}
                 moveOption={moveOption}
+                updateField={updateField}
             />
 
             <div id='extra-fields-wrapper'>

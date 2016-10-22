@@ -8,7 +8,7 @@ export default props =>
     <main id="select-editor" className={props.show ? 'show' : 'hidden'}>
         <input
             value={titleCase(props.field.name)}
-            onChange={e => props.updateOptionName(snakeCase(e.target.value))}
+            onChange={e => props.updateField(snakeCase(props.editingSelect), 'name', e.target.value)}
         />
         <Sortable onChange={(_, __, {oldIndex, newIndex}) => props.moveOption(oldIndex, newIndex)}>
             {

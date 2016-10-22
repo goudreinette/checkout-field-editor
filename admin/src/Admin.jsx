@@ -103,6 +103,7 @@ export default class Admin extends Component {
 
     updateField (index, key, value)
     {
+        console.log(index, key, value)
         this.setState(update(this.state, {
             categories: {[this.state.currentTab]: {extraFields: {[index]: {[key]: {$set: value}}}}}
         }))
