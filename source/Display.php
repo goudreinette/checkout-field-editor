@@ -28,7 +28,6 @@ class Display
         echo "<h2 style='display: block;'>$categoryName</h2>";
         echo "<ul>";
         foreach ($category as $fieldName => $value) {
-            // TODO: if show on email
             $this->renderField($fieldName, $value);
         }
         echo "</ul>";
