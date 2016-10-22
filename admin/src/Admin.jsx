@@ -126,6 +126,7 @@ export default class Admin extends Component {
     {
         this.setState({
             editingCategory: false,
+            editingSelect: null,
             categories: this.filterEmptyCategories(this.state.categories)
         })
     }

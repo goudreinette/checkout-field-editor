@@ -77,11 +77,13 @@ class Checkout
     function renderField($field)
     {
         woocommerce_form_field($field['name'],
-            [
-                'type'        => strtolower($field['type']), // TODO: <select/>
-                'label'       => Utils::titleCase($field['name']),
-                'placeholder' => Utils::titleCase($field['name']),
-                'class'       => ['my-field-class form-row-wide'],
-                'required'    => $field['required']]);
+                               [
+                                   'type'        => strtolower($field['type']), // TODO: <select/>
+                                   'label'       => Utils::titleCase($field['name']),
+                                   'placeholder' => Utils::titleCase($field['name']),
+                                   'class'       => ['my-field-class form-row-wide'],
+                                   'required'    => $field['required'],
+                                   'options'     => $field['options']
+                               ]);
     }
 }
