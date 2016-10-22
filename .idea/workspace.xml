@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="Extra screenshot">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshot_2.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot.png" afterPath="$PROJECT_DIR$/screenshot.png" />
+    <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,11 +20,31 @@
     <phpPath>php</phpPath>
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="checkout-field-editor" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="900">
+                <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -627,7 +646,7 @@
       <updated>1477126583096</updated>
       <workItem from="1477126584212" duration="4193000" />
       <workItem from="1477130801005" duration="179000" />
-      <workItem from="1477131001382" duration="1116000" />
+      <workItem from="1477131001382" duration="1227000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug when removing last category">
       <created>1477127315064</created>
@@ -713,15 +732,36 @@
       <option name="project" value="LOCAL" />
       <updated>1477131819644</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Smaller images">
+      <created>1477132125995</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1477132125995</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Spacing">
+      <created>1477132160952</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1477132160952</updated>
+    </task>
+    <task id="LOCAL-00015" summary="headings">
+      <created>1477132229454</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1477132229454</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5488000" />
+    <option name="totallyTimeSpent" value="5599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="3052" height="3414" extended-state="4" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -735,7 +775,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16415465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16415465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -786,7 +826,10 @@
     <MESSAGE value="Improved readme" />
     <MESSAGE value="Better screenshot" />
     <MESSAGE value="Extra screenshot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extra screenshot" />
+    <MESSAGE value="Smaller images" />
+    <MESSAGE value="Spacing" />
+    <MESSAGE value="headings" />
+    <option name="LAST_COMMIT_MESSAGE" value="headings" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -1212,6 +1255,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
@@ -1224,22 +1277,12 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="630">
-            <caret line="14" column="103" selection-start-line="14" selection-start-column="103" selection-end-line="14" selection-end-column="103" />
+          <first_editor relative-caret-position="900">
+            <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot_2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
   </component>

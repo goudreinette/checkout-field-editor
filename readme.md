@@ -11,7 +11,10 @@
 - Validation for required fields
 
 
+### Field Editor
 ![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/screenshot.png)
 
 
+
+### Select Editor
 ![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/screenshot_2.png)
