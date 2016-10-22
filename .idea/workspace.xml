@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.clj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Display.php" afterPath="$PROJECT_DIR$/source/Display.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/Admin.jsx" afterPath="$PROJECT_DIR$/admin/src/Admin.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Admin.php" afterPath="$PROJECT_DIR$/source/Admin.php" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +28,20 @@
   <component name="FavoritesManager">
     <favorites_list name="checkout-field-editor" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Admin.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="196" column="16" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -36,10 +52,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/Admin.php" />
         <option value="$PROJECT_DIR$/source/Option.php" />
         <option value="$PROJECT_DIR$/source/OptionMeta.php" />
         <option value="$PROJECT_DIR$/source/Checkout.php" />
@@ -53,13 +73,15 @@
         <option value="$PROJECT_DIR$/admin/src/SelectEditor.jsx" />
         <option value="$PROJECT_DIR$/admin/src/ExtraFields.jsx" />
         <option value="$PROJECT_DIR$/admin/public/CategoryList.css" />
-        <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
         <option value="$PROJECT_DIR$/admin/src/ExtraFieldsHeader.jsx" />
         <option value="$PROJECT_DIR$/admin/public/Admin.css" />
         <option value="$PROJECT_DIR$/admin/src/Field.jsx" />
         <option value="$PROJECT_DIR$/admin/public/index.css" />
         <option value="$PROJECT_DIR$/admin/public/ExtraFields.css" />
         <option value="$PROJECT_DIR$/source/Display.php" />
+        <option value="$PROJECT_DIR$/source/Admin.php" />
+        <option value="$PROJECT_DIR$/test.clj" />
+        <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
       </list>
     </option>
   </component>
@@ -68,6 +90,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/admin/node_modules" />
@@ -83,9 +112,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="y" value="42" />
+    <option name="width" value="3072" />
+    <option name="height" value="3414" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -147,26 +176,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="checkout-field-editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="checkout-field-editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wordpress" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
@@ -178,6 +193,8 @@
     <property name="ToolWindowTerminal.ShowToolbar" value="false" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -185,6 +202,12 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -194,6 +217,7 @@
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -207,11 +231,34 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SCRATCH_FILE_ID" value="0" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -230,6 +277,7 @@
       <method />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -242,6 +290,7 @@
       <method />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -250,9 +299,6 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -268,6 +314,34 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -286,52 +360,48 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="" />
+      <created>1477126583096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1477126583096</updated>
+      <workItem from="1477126584212" duration="702000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="702000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="960" height="1053" extended-state="4" />
-    <editor active="false" />
+    <frame x="0" y="42" width="3072" height="3414" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32828128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16438802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -342,7 +412,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -398,37 +467,15 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/admin/public/ExtraFields.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <marker date="1477056292409" expanded="true" signature="14:119" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="143:198" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="224:311" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="340:408" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="437:508" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="526:645" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="699:739" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="757:814" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="834:853" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="883:985" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1016:1054" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1097:1117" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1143:1226" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1264:1283" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1299:1319" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1336:1356" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1380:1413" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1433:1466" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1476:1657" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1669:1707" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1730:1751" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1767:1811" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1826:1889" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1909:1939" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,7 +519,15 @@
         <state relative-caret-position="810">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
-            <marker date="1477063328584" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
+            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -482,7 +537,15 @@
         <state relative-caret-position="324">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1477063328584" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
+            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -492,7 +555,15 @@
         <state relative-caret-position="459">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <marker date="1477063328584" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
+            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -546,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -560,53 +624,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkout-field-editor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1476888428538" expanded="true" signature="41:171" ph=" Responsile for displaying the extra checkout fields. ..." />
-            <marker date="1476888428538" expanded="true" signature="188:3220" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="217:470" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="506:1159" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="762:1078" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="970:1068" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="1185:1871" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="1626:1864" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="1691:1854" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="1915:2532" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="2275:2525" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="2572:2775" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="2597:2668" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="2696:2745" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="2809:3218" ph="{...}" />
-            <marker date="1476888428538" expanded="true" signature="2847:3210" ph="..." />
-            <marker date="1476888428538" expanded="true" signature="2876:3209" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../wordpress/wp-content/plugins/checkout-field-editor/source/Utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../wordpress/wp-content/themes/atelier/woocommerce/checkout/thankyou.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../wordpress/wp-content/plugins/checkout-field-editor/source/Utils.php" />
+    <entry file="file://$PROJECT_DIR$/../../wordpress/wp-content/themes/atelier/woocommerce/checkout/thankyou.php" />
     <entry file="file://$PROJECT_DIR$/../../wordpress/wp-content/plugins/woocommerce/templates/checkout/review-order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -628,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/CategoryListHeader.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -642,20 +654,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/dist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1782">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/src/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/dist/index.js" />
+    <entry file="file://$PROJECT_DIR$/admin/node_modules/react-spinkit/src/index.jsx" />
     <entry file="file://$PROJECT_DIR$/admin/src/Model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -676,13 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498">
-          <caret line="172" column="42" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -735,11 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -772,42 +760,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <marker date="1477056292409" expanded="true" signature="14:119" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="143:198" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="224:311" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="340:408" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="437:508" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="526:645" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="699:739" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="757:814" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="834:853" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="883:985" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1016:1054" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1097:1117" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1143:1226" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1264:1283" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1299:1319" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1336:1356" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1380:1413" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1433:1466" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1476:1657" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1669:1707" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1730:1751" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1767:1811" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1826:1889" ph="{...}" />
-            <marker date="1477056292409" expanded="true" signature="1909:1939" ph="{...}" />
+            <marker date="1477126635362" expanded="true" signature="41:177" ph=" Responsible for showing the Checkout Field Editor, ..." />
+            <marker date="1477126635362" expanded="true" signature="191:1585" ph="{...}" />
+            <marker date="1477126635362" expanded="true" signature="220:458" ph="{...}" />
+            <marker date="1477126635362" expanded="true" signature="486:868" ph="{...}" />
+            <marker date="1477126635362" expanded="true" signature="518:860" ph="..." />
+            <marker date="1477126635362" expanded="true" signature="756:859" ph="..." />
+            <marker date="1477126635362" expanded="true" signature="895:1344" ph="{...}" />
+            <marker date="1477126635362" expanded="true" signature="1379:1583" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <marker date="1477126542192" expanded="true" signature="54:323" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="119:193" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="235:321" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout-field-editor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <marker date="1477126542192" expanded="true" signature="40:296" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <marker date="1477126542192" expanded="true" signature="41:171" ph=" Responsile for displaying the extra checkout fields. ..." />
+            <marker date="1477126542192" expanded="true" signature="188:3220" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="217:470" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="506:1159" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="762:1078" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="970:1068" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1185:1871" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="1626:1864" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1691:1854" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1915:2532" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="2275:2525" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="2572:2775" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="2696:2745" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="2809:3218" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="2847:3210" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="2876:3209" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Display.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="810">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
-            <marker date="1477063328584" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="41:112" ph=" Shows the extra fields on the order confirmation page and emails. ..." />
+            <marker date="1477126542192" expanded="true" signature="128:1337" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="157:332" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="361:738" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="661:731" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="793:1065" ph="{...}" />
+            <marker date="1477126542192" expanded="true" signature="825:840" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="937:1036" ph="..." />
+            <marker date="1477126542192" expanded="true" signature="1111:1335" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/Admin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="196" column="16" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -17,13 +17,14 @@ class Admin
     function addSubmenu()
     {
         add_submenu_page('woocommerce',
-            'Checkout Field Editor',
-            'Checkout Field Editor',
-            'manage_woocommerce',
-            'checkout_field_editor',
-            [
-                $this,
-                'showAdmin']);
+                         'Checkout Field Editor',
+                         'Checkout Field Editor',
+                         'manage_woocommerce',
+                         'checkout_field_editor',
+                         [
+                             $this,
+                             'showAdmin'
+                         ]);
     }
 
 

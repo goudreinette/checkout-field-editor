@@ -71,7 +71,6 @@ export default class Admin extends Component {
     removeCategory (e, index)
     {
         e.stopPropagation()
-        this.stopEditing()
         this.setState(
             update(this.state, {
                 categories: {$splice: [[index, 1]]},
@@ -210,7 +209,7 @@ export default class Admin extends Component {
                     switchTab={this.switchTab.bind(this)}
                 />
                 <ExtraFields
-                    fields={this.state.categories[this.state.currentTab]['extraFields']}
+                    fields={this.state.categories.length && this.state.currentTab !== null ? this.state.categories[this.state.currentTab]['extraFields'] : []}
                     editingSelect={this.state.editingSelect}
                     saving={this.state.saving}
                     addField={this.addField.bind(this)}
