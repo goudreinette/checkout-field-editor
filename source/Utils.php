@@ -19,12 +19,10 @@ class Utils
      */
     static function findByEach($key, $values, $items)
     {
-        $categories = array_map(
-            function ($value) use ($key, $items) {
-                return Utils::findBy($key, $value, $items);
-            },
-            $values
-        );
+        $categories = array_map(function ($value) use ($key, $items) {
+            return Utils::findBy($key, $value, $items);
+        },
+            $values);
 
         return array_filter($categories);
     }
@@ -101,14 +99,23 @@ class Utils
      */
     static function rejectWithEmptyChildren($items)
     {
-        return array_filter(
-            $items,
+        return array_filter($items,
             function ($item) {
                 foreach ($item as $key => $value) {
                     if (isset($value) && $value != "")
                         return true;
                 }
-            }
-        );
+            });
+    }
+
+    static function makeValuesKeys($items)
+    {
+        $result = [];
+
+        foreach ($items as $item) {
+            $result[$item] = $item;
+        }
+
+        return $result;
     }
 }

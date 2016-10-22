@@ -83,7 +83,7 @@ class Checkout
                                    'placeholder' => Utils::titleCase($field['name']),
                                    'class'       => ['my-field-class form-row-wide'],
                                    'required'    => $field['required'],
-                                   'options'     => $field['options']
+                                   'options'     => Utils::makeValuesKeys($field['options'])
                                ]);
     }
 }
