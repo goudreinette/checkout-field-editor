@@ -1,5 +1,6 @@
 <?php namespace CheckoutFieldEditor;
 
+use function Functional\pluck;
 
 class Utils
 {
@@ -60,7 +61,7 @@ class Utils
 
         foreach (array_values($cart_contents) as $product_in_cart) {
             $categories              = wp_get_post_terms($product_in_cart['product_id'], 'product_cat');
-            $categoryNames           = array_column($categories, 'name');
+            $categoryNames           = pluck($categories, 'name');
             $applicableCategoryNames = array_merge($applicableCategoryNames, $categoryNames);
         }
 
@@ -108,7 +109,7 @@ class Utils
             'hide_empty'   => $empty
         ];
         $all_categories = get_categories($args);
-        $categoryNames  = array_column($all_categories, 'name');
+        $categoryNames  = pluck($all_categories, 'name');
 
         return $categoryNames;
     }

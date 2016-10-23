@@ -1,5 +1,8 @@
 <?php namespace CheckoutFieldEditor;
 
+use function Functional\pluck;
+
+
 /**
  * Responsile for displaying the extra checkout fields.
  * Checkout fields shown depends on the categories of the cart contents
@@ -37,7 +40,7 @@ class Checkout
         $extraFieldsByCategory   = OptionMeta::getFields();
         $applicableCategoryNames = Utils::getApplicableCategoryNamesForCart(WC()->cart->cart_contents);
         $applicableCategories    = Utils::findByEach('name', $applicableCategoryNames, $extraFieldsByCategory);
-        $applicableFields        = Utils::array_flatten(array_column($applicableCategories, 'extraFields'));
+        $applicableFields        = Utils::array_flatten(pluck($applicableCategories, 'extraFields'));
 
 
         foreach ($applicableFields as $field) {
