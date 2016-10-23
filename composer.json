@@ -1,17 +1,19 @@
 {
-    "name": "reinvdwoerd/checkout-field-editor",
-    "version": "1.0",
-    "authors": [
-        {
-            "name": "reinvdwoerd",
-            "email": "reinvanderwoerd@me.com"
-        }
-    ],
-    "require": {
-        "phpunit/phpunit": "^5.6",
-        "lstrojny/functional-php": "~1.2"
-    },
-    "autoload": {
-        "psr-4": {"CheckoutFieldEditor\\": "source/"}
+  "name": "reinvdwoerd/checkout-field-editor",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "reinvdwoerd",
+      "email": "reinvanderwoerd@me.com"
     }
+  ],
+  "require": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "CheckoutFieldEditor\\": "source/"
+    }
+  }
 }
