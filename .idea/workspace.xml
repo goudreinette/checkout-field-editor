@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
+    <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="Bugfix Select options">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Checkout.php" afterPath="$PROJECT_DIR$/source/Checkout.php" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,18 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="900">
-                <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="Checkout.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Checkout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,12 +77,12 @@
         <option value="$PROJECT_DIR$/admin/src/ExtraFields.jsx" />
         <option value="$PROJECT_DIR$/admin/src/SelectEditor.jsx" />
         <option value="$PROJECT_DIR$/admin/src/Admin.jsx" />
-        <option value="$PROJECT_DIR$/source/Checkout.php" />
-        <option value="$PROJECT_DIR$/source/Utils.php" />
         <option value="$PROJECT_DIR$/test/AdminTest.php" />
         <option value="$PROJECT_DIR$/test/UtilsTest.php" />
         <option value="$PROJECT_DIR$/source/Display.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/source/Utils.php" />
+        <option value="$PROJECT_DIR$/source/Checkout.php" />
       </list>
     </option>
   </component>
@@ -120,7 +114,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="42" />
-    <option name="width" value="3052" />
+    <option name="width" value="3042" />
     <option name="height" value="3414" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -148,9 +142,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,6 +160,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="checkout-field-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkout-field-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkout-field-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,7 +654,8 @@
       <updated>1477126583096</updated>
       <workItem from="1477126584212" duration="4193000" />
       <workItem from="1477130801005" duration="179000" />
-      <workItem from="1477131001382" duration="1227000" />
+      <workItem from="1477131001382" duration="1292000" />
+      <workItem from="1477163417877" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug when removing last category">
       <created>1477127315064</created>
@@ -753,42 +762,49 @@
       <option name="project" value="LOCAL" />
       <updated>1477132229454</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="headings">
+      <created>1477132235146</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1477132235146</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5599000" />
+    <option name="totallyTimeSpent" value="6302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="42" width="3052" height="3414" extended-state="4" />
+    <frame x="0" y="42" width="3042" height="3414" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16415465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16403683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39890876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39890876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -829,7 +845,8 @@
     <MESSAGE value="Smaller images" />
     <MESSAGE value="Spacing" />
     <MESSAGE value="headings" />
-    <option name="LAST_COMMIT_MESSAGE" value="headings" />
+    <MESSAGE value="Bugfix Select options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfix Select options" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -857,8 +874,13 @@
           <line>17</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/source/Utils.php</url>
+          <line>137</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1163,77 +1185,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/AdminTest.php" />
-    <entry file="file://$PROJECT_DIR$/source/Utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3070">
-          <caret line="156" column="23" selection-start-line="156" selection-start-column="23" selection-end-line="156" selection-end-column="23" />
-          <folding>
-            <marker date="1477130264452" expanded="true" signature="50:4436" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="60:121" ph=" Find the item where item[key] is value in array ..." />
-            <marker date="1477130264452" expanded="true" signature="170:295" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="212:288" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="304:364" ph=" Get all item's who's key matches one of values ..." />
-            <marker date="1477130264452" expanded="true" signature="420:635" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="459:584" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="497:562" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="687:862" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="906:1256" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="945:980" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="1048:1224" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="1084:1153" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="1161:1214" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="1328:1774" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="1443:1725" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="1820:2294" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="1872:2258" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="2029:2248" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="2303:2376" ph=" Get all defined product categories. ..." />
-            <marker date="1477130264452" expanded="true" signature="2421:3198" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="2748:3044" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="3207:3270" ph=" Filter out items whose children are empty strings ..." />
-            <marker date="1477130264452" expanded="true" signature="3324:3581" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="3359:3573" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="3397:3572" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="3449:3558" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="3625:3767" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="3690:3735" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="3842:4434" ph="{...}" />
-            <marker date="1477130264452" expanded="true" signature="3931:4402" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="4033:4392" ph="..." />
-            <marker date="1477130264452" expanded="true" signature="4291:4378" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/UtilsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <marker date="1477128580895" expanded="true" signature="41:171" ph=" Responsile for displaying the extra checkout fields. ..." />
-            <marker date="1477128580895" expanded="true" signature="188:3460" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="217:470" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="506:1159" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="762:1078" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="970:1068" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="1185:1871" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="1626:1864" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="1691:1854" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="1915:2532" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="2275:2525" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="2572:2775" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="2696:2745" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="2809:3458" ph="{...}" />
-            <marker date="1477128580895" expanded="true" signature="2847:3450" ph="..." />
-            <marker date="1477128580895" expanded="true" signature="2895:3449" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1260,12 +1215,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="405">
+            <caret line="9" column="22" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
@@ -1275,13 +1234,59 @@
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="900">
-            <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+          <folding>
+            <marker date="1477163674808" expanded="true" signature="50:4436" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="60:121" ph=" Find the item where item[key] is value in array ..." />
+            <marker date="1477163674808" expanded="true" signature="170:295" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="212:288" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="304:364" ph=" Get all item's who's key matches one of values ..." />
+            <marker date="1477163674808" expanded="true" signature="420:635" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="459:584" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="497:562" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="687:862" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="906:1256" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="945:980" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="1048:1224" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="1084:1153" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="1161:1214" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="1328:1774" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="1443:1725" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="1820:2294" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="1872:2258" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="2029:2248" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="2303:2376" ph=" Get all defined product categories. ..." />
+            <marker date="1477163674808" expanded="true" signature="2421:3198" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="2748:3044" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="3207:3270" ph=" Filter out items whose children are empty strings ..." />
+            <marker date="1477163674808" expanded="true" signature="3324:3581" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="3359:3573" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="3397:3572" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="3449:3558" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="3625:3767" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="3690:3735" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="3842:4434" ph="{...}" />
+            <marker date="1477163674808" expanded="true" signature="3931:4402" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="4033:4392" ph="..." />
+            <marker date="1477163674808" expanded="true" signature="4291:4378" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
