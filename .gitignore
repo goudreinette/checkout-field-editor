@@ -16,3 +16,4 @@ npm-debug.log
 views/admin
 /vendor/
 .idea/x
+dist/
