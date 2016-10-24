@@ -7,8 +7,9 @@ class OptionMeta
     static function getFields()
     {
         $result = get_option('ccf');
-
-        return $result;
+        if (!isset($result) || $result[0] == "")
+            return null; else
+            return $result;
     }
 
     static function storeFields($fields)
