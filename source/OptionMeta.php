@@ -6,7 +6,8 @@ class OptionMeta
 
     static function getFields()
     {
-        $result = get_option('ccf');
+        $result = get_option(self::$meta_key);
+        
         if (!isset($result) || $result[0] == "")
             return null; else
             return $result;
@@ -14,7 +15,7 @@ class OptionMeta
 
     static function storeFields($fields)
     {
-        $result = update_option('ccf', $fields);
+        $result = update_option(self::$meta_key, $fields);
 
         return $result;
     }

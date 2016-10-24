@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="Bugfix Select options">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.exs" afterPath="" />
+    <list default="true" id="98e3120d-f5dc-4ae9-b4bf-0b06d45a2718" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/OptionMeta.php" afterPath="$PROJECT_DIR$/source/OptionMeta.php" />
     </list>
     <ignored path="checkout-field-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,12 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Utils.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/Utils.php">
+      <file leaf-file-name="Display.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Display.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1135">
-              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="990">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <marker date="1477130609728" expanded="true" signature="912:927" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +61,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/source/Option.php" />
-        <option value="$PROJECT_DIR$/source/OptionMeta.php" />
         <option value="$PROJECT_DIR$/source/Emails.php" />
         <option value="$PROJECT_DIR$/checkout-field-editor.php" />
         <option value="$PROJECT_DIR$/admin/src/SelectEditor.jsx.js" />
@@ -84,6 +86,7 @@
         <option value="$PROJECT_DIR$/build.exs" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/source/Utils.php" />
+        <option value="$PROJECT_DIR$/source/OptionMeta.php" />
       </list>
     </option>
   </component>
@@ -143,7 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,7 +182,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,9 +280,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -311,19 +311,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -345,6 +332,7 @@
       <workItem from="1477234242595" duration="1403000" />
       <workItem from="1477236352990" duration="11000" />
       <workItem from="1477327961006" duration="57000" />
+      <workItem from="1477328101444" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug when removing last category">
       <created>1477127315064</created>
@@ -458,49 +446,49 @@
       <option name="project" value="LOCAL" />
       <updated>1477132235146</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="get_option == [&quot;&quot;&quot;] bug finally fixed!">
+      <created>1477328304079</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1477328304079</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7773000" />
+    <option name="totallyTimeSpent" value="8482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="3052" height="3414" extended-state="4" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24148937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32828128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16153342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16120577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39820358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39820358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -520,7 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <confirmMoveToFailedCommit value="1" />
-    <MESSAGE value="validate/save finished" />
     <MESSAGE value="Printing finished" />
     <MESSAGE value="todo" />
     <MESSAGE value="Thankyou display" />
@@ -545,7 +532,8 @@
     <MESSAGE value="Spacing" />
     <MESSAGE value="headings" />
     <MESSAGE value="Bugfix Select options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix Select options" />
+    <MESSAGE value="get_option == [&quot;&quot;&quot;] bug finally fixed!" />
+    <option name="LAST_COMMIT_MESSAGE" value="get_option == [&quot;&quot;&quot;] bug finally fixed!" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../wordpress</wordpressPath>
@@ -587,7 +575,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
+          <folding>
+            <marker date="1477130609728" expanded="true" signature="912:927" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -795,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../wordpress/wp-includes/functions.wp-scripts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
@@ -817,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Display.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1442">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screenshot_2.png" />
     <entry file="file://$PROJECT_DIR$/readme.md" />
     <entry file="file://$PROJECT_DIR$/screenshot.png" />
@@ -833,22 +808,22 @@
         <state relative-caret-position="297">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
-            <marker date="1477248495404" expanded="true" signature="42:172" ph=" Responsile for displaying the extra checkout fields. ..." />
-            <marker date="1477248495404" expanded="true" signature="189:3492" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="218:471" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="507:1160" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="763:1079" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="971:1069" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="1186:1878" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="1633:1871" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="1698:1861" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="1922:2539" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="2282:2532" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="2579:2782" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="2703:2752" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="2816:3490" ph="{...}" />
-            <marker date="1477248495404" expanded="true" signature="2854:3482" ph="..." />
-            <marker date="1477248495404" expanded="true" signature="2902:3481" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="42:172" ph=" Responsile for displaying the extra checkout fields. ..." />
+            <marker date="1477235435631" expanded="true" signature="189:3492" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="218:471" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="507:1160" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="763:1079" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="971:1069" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="1186:1878" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="1633:1871" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="1698:1861" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="1922:2539" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="2282:2532" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="2579:2782" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="2703:2752" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="2816:3490" ph="{...}" />
+            <marker date="1477235435631" expanded="true" signature="2854:3482" ph="..." />
+            <marker date="1477235435631" expanded="true" signature="2902:3481" ph="..." />
           </folding>
         </state>
       </provider>
@@ -875,14 +850,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build.exs" />
     <entry file="file://$PROJECT_DIR$/source/Checkout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1855">
@@ -910,9 +878,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Utils.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1135">
-          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="5175">
+          <caret line="115" column="7" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
+          <folding>
+            <marker date="1477328039088" expanded="true" signature="50:4753" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="60:121" ph=" Find the item where item[key] is value in array ..." />
+            <marker date="1477328039088" expanded="true" signature="170:295" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="212:288" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="304:364" ph=" Get all item's who's key matches one of values ..." />
+            <marker date="1477328039088" expanded="true" signature="420:635" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="459:584" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="497:562" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="687:862" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="906:1256" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="945:980" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="1048:1224" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="1084:1153" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="1161:1214" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="1328:1780" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="1443:1731" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="1826:2300" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="1878:2264" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="2035:2254" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="2309:2382" ph=" Get all defined product categories. ..." />
+            <marker date="1477328039088" expanded="true" signature="2427:3210" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="2754:3050" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="3219:3282" ph=" Filter out items whose children are empty strings ..." />
+            <marker date="1477328039088" expanded="true" signature="3336:3593" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="3371:3585" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="3409:3584" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="3461:3570" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="3637:3779" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="3702:3747" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="3854:4446" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="3943:4414" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="4045:4404" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="4303:4390" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="4486:4751" ph="{...}" />
+            <marker date="1477328039088" expanded="true" signature="4518:4743" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="4547:4722" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="4582:4631" ph="..." />
+            <marker date="1477328039088" expanded="true" signature="4661:4712" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/OptionMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <marker date="1477328336415" expanded="true" signature="54:434" ph="{...}" />
+            <marker date="1477328336415" expanded="true" signature="119:294" ph="{...}" />
+            <marker date="1477328336415" expanded="true" signature="336:432" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1477130609728" expanded="true" signature="912:927" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
