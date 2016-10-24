@@ -160,7 +160,11 @@ class Utils
     function array_pluck($array, $key)
     {
         return array_map(function ($item) use ($key) {
-            return $item[$key];
+            if (is_array($item)) {
+                return $item[$key];
+            } else if (is_object($item)) {
+                return $item->{$key};
+            }
         },
             $array);
     }
