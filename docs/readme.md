@@ -12,9 +12,9 @@
 
 
 ### Field Editor
-![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/screenshot.png)
+![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/docs/screenshot.png)
 
 
 
 ### Select Editor
-![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/screenshot_2.png)
+![alt tag](https://raw.githubusercontent.com/reinvdwoerd/checkout-field-editor/master/docs/screenshot_2.png)
